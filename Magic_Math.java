@@ -18,7 +18,7 @@ public class Magic_Math
      
     public static void main(String[] args) 
     {
-        
+        System.out.println("hellou word");
     }
     
 }
