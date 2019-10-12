@@ -1,6 +1,6 @@
 
 package magic_math;
-
+import java.util.Scanner;
 /**
  *
  * @author renan.smaciel
@@ -14,6 +14,8 @@ package magic_math;
  */
 public class Magic_Math 
 {
+    
+    static Scanner entrar = new Scanner(System.in);//objeto criado para receber dados que serão armazenados em variaveis
 
      
     public static void main(String[] args) 
