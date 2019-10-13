@@ -58,11 +58,11 @@ public class magic_math
              
                 //COMEÇO DO JOGO A PARTIR DA DECISÃO SIM
                 
-                int dados = entrarDadosInt();
+                int dados = entrarDadosInt(); // variavel criada para capturar a escolha a cima
                 
                 if (dados == 1){
                     System.out.println("Informe o seu nome: ");
-                  String nome =  entrarDadosStr();
+                  String nome =  entrarDadosStr(); // variavel criada para capturar o nome do usuario
                     System.out.println("                                   ....\n" +
 "                                .'' .'''\n" +
 ".                             .'   :\n" +
