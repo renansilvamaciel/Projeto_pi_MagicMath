@@ -19,7 +19,7 @@ import java.util.Scanner;
 
 public class magic_math 
 {
-     static int opcoesMenu(int op){ // opções ao escolher uma das alternativas do menu inicial
+        static int opcoesMenu(int op){ // opções ao escolher uma das alternativas do menu inicial
         
         
         switch(op){
@@ -214,7 +214,7 @@ public class magic_math
 " '-----L___;--.,__;-' --''-.'---'");
                             
                             System.out.println("parabens jovem aventureiro, porem este foi apenas o 1º teste, a partir daqui as coisas ficarão mais dificeis,\n" +
-" muitos tentaram e nenhum até hoje conseguiu, se você não deseja perecer onde outros sucumbiram é a chance de voltar, você deseja continuar?");
+                            " muitos tentaram e nenhum até hoje conseguiu, se você não deseja perecer onde outros sucumbiram é a chance de voltar, você deseja continuar?");
                             System.out.println("╔════•ೋೋ•════╗ \n" +
                                                "  1- [Sim]  ||  2- [Não]\n" +
                                                "╚════•ೋೋ•════╝");
@@ -222,8 +222,36 @@ public class magic_math
                             dados1 = entrarDadosInt();//entrada de dados para a decisão acima
                             switch(dados1){
                                 case 1:
-                                    System.out.println("A partir daqui não se pode mais desistir e a morte será certa porém caso consiga você obtera algo de valor inestimavel");
-                                    break;
+                                    System.out.println("A partir daqui não se pode mais desistir e a morte será certa porém caso consiga você obtera algo de valor inestimavel...");
+                                    System.out.println("");
+                                    System.out.println("( finalmente agora dentro das ruinas o héroi se depara com um lago vermelho como sangue\n" +
+                                    "e na beira deste lago tem um barqueiro chamado Aqueronte e para atravessar este lago Aqueronte propoe o seguinte enigma ) ");
+                                    System.out.println("                      `-.\n" +
+"              -._ `. `-.`-. `-.\n" +
+"             _._ `-._`.   .--.  `.\n" +
+"          .-'   '-.  `-|\\/    \\|   `-.\n" +
+"        .'         '-._\\   (o)O) `-.\n" +
+"       /         /         _.--.\\ '. `-. `-.\n" +
+"      /|    (    |  /  -. ( -._( -._ '. '.\n" +
+"     /  \\    \\-.__\\ \\_.-'`.`.__'.   `-, '. .'\n" +
+"     |  /\\    |  / \\ \\     `--')/  .-'.'.'\n" +
+" .._/  /  /  /  / / \\ \\          .' . .' .'\n" +
+"/  ___/  |  /   \\ \\  \\ \\__       '.'. . .\n" +
+"\\  \\___  \\ (     \\ \\  `._ `.     .' . ' .'\n" +
+" \\ `-._\\ (  `-.__ | \\    )//   .'  .' .-'\n" +
+"  \\_-._\\  \\  `-._\\)//    \"\"_.-' .-' .' .'\n" +
+"    `-'    \\ -._\\ \"\"_..--''  .-' .'\n" +
+"            \\/    .' .-'.-'  .-' .-'\n" +
+"                .-'.' .'  .' .-'");
+                                    
+                                    System.out.println("");
+                                    System.out.println("╔════•ೋೋ•════╗ \n" +
+                                                       "         2º Desafio\n" +
+                                                       "╚════•ೋೋ•════╝");
+                                    System.out.println("Dentro de uma vila temos uma tribo cujo existem 35 seres mitologicos formado de minotauros e centauros,\n" +
+                                                       " os quais juntos soma 100 pés, qual o numero respectivamente de minotaruros e centauros?\n" +
+                                                       " ( use o sistema numerico M+C = 35 | 2M + 4C = 100 \" )");
+                                    break;// FIM CASE 1
                                 case 2:
                                     System.out.println("Voltando para a casa, fim da jornada...");
                                     break;
@@ -302,18 +330,53 @@ public class magic_math
         
         int opcao;
         
-        System.out.println("╔════•ೋೋ•════╗ \n" +
-                           "         Magic Math\n" +
-                           "╚════•ೋೋ•════╝");
-         System.out.println("        ︻雷魔▅▆▇◤");
+        System.out.println("                           ╔════•ೋೋ•════╗ \n" +
+                           "                                     Magic Math\n" +
+                           "                           ╚════•ೋೋ•════╝");
+         System.out.println("                                   ︻雷魔▅▆▇◤");
          System.out.println("");
-         System.out.println("━━╮╰╮┊┊┊┊┊┊\n" +
-                            "┊┊╰╮╰━▂▂▂▂┊┊┊┊┊┊\n" +
-                            "┊▂╱▔╲▔╱┏┳╮╲┊┊ᶤ.╭╮\n" +
-                            "▂╲▂▂╱╲╲╰┻┛╱▔▔▔▔┃\n" +
-                            "╲▂▂╱╭╯╱▔▔╱▔▔▔▽▽╯\n" +
-                            "┊╱╱╭╯╱▔▔▔╲▂▂△▂△╮\n" +
-                            "━━━╯╱╱╭━━━━━━━━╯");
+         System.out.println("                        /\\\n" +
+"                        ||\n" +
+"                        ||\n" +
+"                        ||\n" +
+"                        ||                                               ~-----~\n" +
+"                        ||                                            /===--  ---~~~\n" +
+"                        ||                   ;'                 /==~- --   -    ---~~~\n" +
+"                        ||                (/ ('              /=----         ~~_  --(  '\n" +
+"                        ||             ' / ;'             /=----               \\__~\n" +
+"     '                ~==_=~          '('             ~-~~      ~~~~        ~~~--\\~'\n" +
+"     \\\\                (c_\\_        .i.             /~--    ~~~--   -~     (     '\n" +
+"      `\\               (}| /       / : \\           / ~~------~     ~~\\   (\n" +
+"      \\ '               ||/ \\      |===|          /~/             ~~~ \\ \\(\n" +
+"      ``~\\              ~~\\  )~.~_ >._.< _~-~     |`_          ~~-~     )\\\n" +
+"       '-~                 {  /  ) \\___/ (   \\   |` ` _       ~~         '\n" +
+"       \\ -~\\                -<__/  -   -  L~ -;   \\\\    \\ _ _/\n" +
+"       `` ~~=\\                  {    :    }\\ ,\\    ||   _ :(\n" +
+"        \\  ~~=\\__                \\ _/ \\_ /  )  } _//   ( `|'\n" +
+"        ``    , ~\\--~=\\           \\     /  / _/ / '    (   '\n" +
+"         \\`    } ~ ~~ -~=\\   _~_  / \\ / \\ )^ ( // :_  / '\n" +
+"         |    ,          _~-'   '~~__-_  / - |/     \\ (\n" +
+"          \\  ,_--_     _/              \\_'---', -~ .   \\\n" +
+"           )/      /\\ / /\\   ,~,         \\__ _}     \\_  \"~_\n" +
+"           ,      { ( _ )'} ~ - \\_    ~\\  (-:-)       \"\\   ~ \n" +
+"                  /'' ''  )~ \\~_ ~\\   )->  \\ :|    _,       \" \n" +
+"                 (\\  _/)''} | \\~_ ~  /~(   | :)   /          }\n" +
+"                <``  >;,,/  )= \\~__ {{{ '  \\ =(  ,   ,       ;\n" +
+"               {o_o }_/     |v  '~__  _    )-v|  \"  :       ,\"\n" +
+"               {/\"\\_)       {_/'  \\~__ ~\\_ \\\\_} '  {        /~\\\n" +
+"               ,/!          '_/    '~__ _-~ \\_' :  '      ,\"  ~ \n" +
+"              (''`                  /,'~___~    | /     ,\"  \\ ~' \n" +
+"             '/, )                 (-)  '~____~\";     ,\"     , }\n" +
+"           /,')                    / \\         /  ,~-\"       '~'\n" +
+"       (  ''/                     / ( '       /  /          '~'\n" +
+"    ~ ~  ,, /) ,                 (/( \\)      ( -)          /~'\n" +
+"  (  ~~ )`  ~}                   '  \\)'     _/ /           ~'\n" +
+" { |) /`,--.(  }'                    '     (  /          /~'\n" +
+"(` ~ ( c|~~| `}   )                        '/:\\         ,'\n" +
+" ~ )/``) )) '|),                          (/ | \\)                     \n" +
+"  (` (-~(( `~`'  )                        ' (/ '\n" +
+"   `~'    )'`')                              '\n" +
+"     ` ``");
          
          
          System.out.println("");
@@ -349,9 +412,3 @@ public class magic_math
 }
 
     
-   
-
-     
-   
-    
-
