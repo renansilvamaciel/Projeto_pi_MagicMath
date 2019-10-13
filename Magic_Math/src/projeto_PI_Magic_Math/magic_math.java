@@ -150,11 +150,11 @@ public class magic_math
                     
                     switch(dados1){
                         case 1:
-                            System.out.println("Você errou!");
+                            System.out.println("Você errou, tente novamente!");
                             break;
                             
                         case 2:
-                            System.out.println("Você errou!");
+                            System.out.println("Você errou, tente novamente!");
                             break;
                             
                         case 3:
@@ -162,7 +162,12 @@ public class magic_math
                             break;
                             
                         case 4:
-                            System.out.println("Você errou!");
+                            System.out.println("Você errou, tente novamente!");
+                            break;
+                            
+                        default:
+                            System.out.println("Opção incorreta!");
+                            break;
                     }
                     
                 }
