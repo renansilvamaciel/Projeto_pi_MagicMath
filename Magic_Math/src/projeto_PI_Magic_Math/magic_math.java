@@ -23,7 +23,7 @@ public class magic_math
         
         
         switch(op){
-            case 1:
+            case 1:  //AQUI VAI ACONTECER TODO O JOGO
                 System.out.println("                                             _______________________\n" +
 "   _______________________-------------------                       `\\\n" +
 " /:--__                                                              |\n" +
@@ -63,10 +63,86 @@ public class magic_math
                 if (dados == 1){
                     System.out.println("Informe o seu nome: ");
                   String nome =  entrarDadosStr();
-                    System.out.println("olá, caro jovem "+nome+", eu sou o 13º mago celestial o ultimo de todos, seu pai foi um grande mago, um excelente matematico,\n" +
+                    System.out.println("                                   ....\n" +
+"                                .'' .'''\n" +
+".                             .'   :\n" +
+"\\\\                          .:    :\n" +
+" \\\\                        _:    :       ..----.._\n" +
+"  \\\\                    .:::.....:::.. .'         ''.\n" +
+"   \\\\                 .'  #-. .-######'     #        '.\n" +
+"    \\\\                 '.##'/ ' ################       :\n" +
+"     \\\\                  #####################         :\n" +
+"      \\\\               ..##.-.#### .''''###'.._        :\n" +
+"       \\\\             :--:########:            '.    .' :\n" +
+"        \\\\..__...--.. :--:#######.'   '.         '.     :\n" +
+"        :     :  : : '':'-:'':'::        .         '.  .'\n" +
+"        '---'''..: :    ':    '..'''.      '.        :'\n" +
+"           \\\\  :: : :     '      ''''''.     '.      .:\n" +
+"            \\\\ ::  : :     '            '.      '      :\n" +
+"             \\\\::   : :           ....' ..:       '     '.\n" +
+"              \\\\::  : :    .....####\\\\ .~~.:.             :\n" +
+"               \\\\':.:.:.:'#########.===. ~ |.'-.   . '''.. :\n" +
+"                \\\\    .'  ########## \\ \\ _.' '. '-.       '''.\n" +
+"                :\\\\  :     ########   \\ \\      '.  '-.        :\n" +
+"               :  \\\\'    '   #### :    \\ \\      :.    '-.      :\n" +
+"              :  .'\\\\   :'  :     :     \\ \\       :      '-.    :\n" +
+"             : .'  .\\\\  '  :      :     :\\ \\       :        '.   :\n" +
+"             ::   :  \\\\'  :.      :     : \\ \\      :          '. :\n" +
+"             ::. :    \\\\  : :      :    ;  \\ \\     :           '.:\n" +
+"              : ':    '\\\\ :  :     :     :  \\:\\     :        ..'\n" +
+"                 :    ' \\\\ :        :     ;  \\|      :   .'''\n" +
+"                 '.   '  \\\\:                         :.''\n" +
+"                  .:..... \\\\:       :            ..''\n" +
+"                 '._____|'.\\\\......'''''''.:..'''\n" +
+"                            \\\\ ");
+                    
+                    System.out.println("olá, caro jovem " +nome+ ", eu sou o 13º mago celestial o ultimo de todos, seu pai foi um grande mago, um excelente matematico,\n" +
 " amigo e professor e ele confiou a mim a missão de guia-lo em seu destino, sua jornada se passara nas ruínas do mundo desconhecido\n" +
 " onde caso você consiga passar pelos 10 desafios divinos você obtera o conhecimento supremo para enfim restaurar o nosso mundo,\n" +
-" o povo de Eldia conta com você, salve o mundo e construa o seu destino...");
+" o povo de Eldia conta com você, salve o mundo e construa o seu destino...");    
+                    
+                    System.out.println("");
+                    System.out.println("chegando nas ruinas do mundo desconhecido o jovem se depara com o 1º problema,\n" +
+" para ele entrar dentro das ruínas ele terá que resolver o enigma de raciocinio");        
+              
+                    
+                    System.out.println("  |||            _.'   _      _.-. |        | |--\n" +
+" \\|||         _.'    -    _.-'  _|-|       -| |__\n" +
+"  ||;-,    _.'   '-  _.-'' _.-''|  |-'      | `._\n" +
+" -'| / \\_,' _    _.-'   _.' |   |  |    -|  |\n" +
+" ----|,`   |  _.'   _.-' | ,| ,'| _| |      |_   \n" +
+"    _:  _   ,'   .-'    _|/ \\ | | -|  _|_   | '\n" +
+"   | |    ,'  .-'     , )|)-( |_|  |-       |    -\n" +
+" -   |  ,'  ,'(   `  /_\\||`.'   |- |   -|_  |\n" +
+" ___-| /  ,'   )     `.'||.-| _ | ||        | '-'\n" +
+" __( |;  /    / ,-    | ||  |/ \\|_ | _|    -|    \n" +
+"   | :  ; ,-.-)       | ||  || ||  |   |_   |    _\n" +
+"  _| | :/` _..\\  `-.  | ||__||_|;--;--------:  ,'`\n" +
+"   | | |,-'  _/       |,-/\\_|  /__/__________\\::::\n" +
+"   |-| |   ,' \\, ` ___|||||-|  |  |  _|_     ||___\n" +
+" _ | | | ,'   (   ;   :'''' /| ||_|       _  ||---\n" +
+" - | | |/     ;  /     :   : | |  |   _|_    ||---\n" +
+"   | | |      |,'______|-..| | |_||      |  _||---\n" +
+"   | | |      ||_      |   | | |_ |  -      -|----   \n" +
+" _|| | |      ;|-:  _  |   | |,|- |-   _|  _ |--,'\n" +
+"   | | |______\\| |,' `.|`-.| |:|  | _|    |  |,','\n" +
+"   |-| | ~   ~|| ||__|||! !| | ;--;----__---,','|\n" +
+"   | | |,._,~_|:.||-'|||! !| |/__/____/\\_\\,','|\\|\n" +
+" -.| | ;     _.-'|| - ||`.!| ||  |    ||_|,'| | |,\n" +
+"  || ;'|_,-''    -    - `.`| ||  | ___|| ||\\| |,',\n" +
+" , | | |    -     -     -  ) '|__||\\  || | \\|,','\n" +
+"   ; | | -     -      -      |\\    \\\\ || |_,',' \n" +
+"  /| | ;    -     -           \\\\    \\\\|| |','\n" +
+" / | |/                        \\\\    \\|| |'");
+                    
+                    
+                    System.out.println("");
+                    System.out.println("╔════•ೋೋ•════╗ \n" +
+                                       "         1º Desafio\n" +
+                                       "╚════•ೋೋ•════╝");
+                    
+                    System.out.println("O qué é que de manhã tem 4 pernas, a tarde tem 2 e a noite tem 3?");
+                    
                 }
                 
                 else
