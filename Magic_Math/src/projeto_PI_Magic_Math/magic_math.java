@@ -278,7 +278,7 @@ public class magic_math
        opcao = entrar.nextInt(); // capturando dados
        
        int opMenu = opcoesMenu(opcao); // criando variavel que recebera os dados coletados e passara para a função switch "opcoesMenu"
-                    
+               System.out.println("teste");     
     }
     
 }
