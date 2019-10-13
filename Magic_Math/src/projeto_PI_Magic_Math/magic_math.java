@@ -23,6 +23,7 @@ public class magic_math
      public static void main(String[] args) 
     {
         System.out.println("Salve quebrada!");
+        System.out.println("hello");
     }
 }
 
