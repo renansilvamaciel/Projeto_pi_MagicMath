@@ -142,6 +142,28 @@ public class magic_math
                                        "╚════•ೋೋ•════╝");
                     
                     System.out.println("O qué é que de manhã tem 4 pernas, a tarde tem 2 e a noite tem 3?");
+                    System.out.println("[1]- Uma sombra de uma cadeira sobre diferetes posições do sol");
+                    System.out.println("[2]- Um animal");
+                    System.out.println("[3]- A passagem da vida de um homem");
+                    System.out.println("[4]- Uma sombra de uma cama sobre diferetes posições do sol");
+                    int dados1 = entrarDadosInt();
+                    
+                    switch(dados1){
+                        case 1:
+                            System.out.println("Você errou");
+                            break;
+                            
+                        case 2:
+                            System.out.println("Você errou");
+                            break;
+                            
+                        case 3:
+                            System.out.println("Parabéns você acertou");
+                            break;
+                            
+                        case 4:
+                            System.out.println("Você errou");
+                    }
                     
                 }
                 
