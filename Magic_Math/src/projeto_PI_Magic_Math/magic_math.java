@@ -52,7 +52,7 @@ public class magic_math
 "   |         e a ordem em nosso mundo, você aceita continuar?        |\n" +
 "  |                                              ____________________|_ \n" +
 "  |  ___________________-------------------------                      `\\\n" +
-"  |/`--_                  ╔════•ೋೋ•════╗                    |\n" +
+"  |/`--_                 ╔════•ೋೋ•═════╗                   |\n" +
 "  ||[ ]||                   1- [Sim]   || 2- [Não]   ___________________/\n" +
 "   \\===/___________________--------------------------");
              
@@ -137,6 +137,7 @@ public class magic_math
                     
                     
                     System.out.println("");
+                    
                     System.out.println("╔════•ೋೋ•════╗ \n" +
                                        "         1º Desafio\n" +
                                        "╚════•ೋೋ•════╝");
@@ -168,10 +169,13 @@ public class magic_math
                         default:
                             System.out.println("Opção incorreta!");
                             break;
-                    }
+                    }// FIM SWITCH
                     
-                }
-                
+               
+                    
+              }//FIM DO IF
+                    
+                    
                 else
                     System.out.println("Saindo do jogo...");
                 break;
@@ -238,8 +242,8 @@ public class magic_math
         int opcao;
         
         System.out.println("╔════•ೋೋ•════╗ \n" +
-                            "         Magic Math\n" +
-                            "╚════•ೋೋ•════╝");
+                           "         Magic Math\n" +
+                           "╚════•ೋೋ•════╝");
          System.out.println("        ︻雷魔▅▆▇◤");
          System.out.println("");
          System.out.println("━━╮╰╮┊┊┊┊┊┊\n" +
@@ -253,7 +257,7 @@ public class magic_math
          
          System.out.println("");
         System.out.println("╔════•ೋೋ•════╗ \n" +
-                            "            Menu\n" +
+                           "            Menu\n" +
                            "╚════•ೋೋ•════╝");
         
         
@@ -278,7 +282,7 @@ public class magic_math
        opcao = entrar.nextInt(); // capturando dados
        
        int opMenu = opcoesMenu(opcao); // criando variavel que recebera os dados coletados e passara para a função switch "opcoesMenu"
-                   
+                    
     }
     
 }
