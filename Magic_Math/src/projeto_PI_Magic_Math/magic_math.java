@@ -1,6 +1,9 @@
 /**
  *
- * @author renan.smaciel
+ * Autores:
+ * Marcos vinicius Santos Souza
+ * Renan Maciel
+ * Matheus Caetano
  * 
  *             ****** ATENCAO ******
  *  Sempre lembre de comentar o codgo, quando criar alguma cariavel ou funcao 
@@ -13,10 +16,7 @@ package projeto_PI_Magic_Math;
 
 import java.util.Scanner;
 
-/**
- *
- * @author I
- */
+
 public class magic_math 
 {
      static int opcoesMenu(int op){ // opções ao escolher uma das alternativas do menu inicial
@@ -61,7 +61,9 @@ public class magic_math
                 int dados = entrarDadosInt(); // variavel criada para capturar a escolha a cima
                 
                 if (dados == 1){
-                    System.out.println("Informe o seu nome: ");
+                    System.out.println("╔════•ೋೋ•════╗ \n" +
+                                       "    Informe o seu nome:\n" +
+                                       "╚════•ೋೋ•════╝");
                   String nome =  entrarDadosStr(); // variavel criada para capturar o nome do usuario
                     System.out.println("                                   ....\n" +
 "                                .'' .'''\n" +
@@ -138,48 +140,107 @@ public class magic_math
                     
                     System.out.println("");
                     
+                    int dados1;// Variavel criada para armazenar escolha do desafio e fazer looping do DO WHILE
                     System.out.println("╔════•ೋೋ•════╗ \n" +
                                        "         1º Desafio\n" +
                                        "╚════•ೋೋ•════╝");
-                    
+                    do{
                     System.out.println("O qué é que de manhã tem 4 pernas, a tarde tem 2 e a noite tem 3?");
                     System.out.println("[1]- Uma sombra de uma cadeira sobre diferetes posições do sol");
                     System.out.println("[2]- Um animal");
                     System.out.println("[3]- A passagem da vida de um homem");
                     System.out.println("[4]- Uma sombra de uma cama sobre diferetes posições do sol");
-                    int dados1 = entrarDadosInt();
-                    
+                    dados1 = entrarDadosInt();
                     switch(dados1){
                         case 1:
                             System.out.println("Você errou, tente novamente!");
                             break;
-                            
+                        
                         case 2:
                             System.out.println("Você errou, tente novamente!");
                             break;
                             
-                        case 3:
-                            System.out.println("Parabéns você acertou!");
+                       case 3:
+                            System.out.println("");
                             break;
                             
                         case 4:
                             System.out.println("Você errou, tente novamente!");
                             break;
-                            
                         default:
-                            System.out.println("Opção incorreta!");
+                            System.out.println("Opção invalida!");
                             break;
+                    }
+                    }while(dados1 != 3); // fim do looping DO WHILE
+                    switch(dados1){// Resposta correta
+                        case 3:
+                            System.out.println("Parabéns você acertou!");
+                            System.out.println("");
+                            System.out.println("Deusa divina: ");
+                            System.out.println("");
+                            System.out.println(""+ "          .;;;,.,\n" +
+"         ;sXs=SV2;\n" +
+"        ;;Y; _ ^_;\n" +
+"        :LS  a (a(\n" +
+"       ;;;;   .. ;\n" +
+"       ;';)'. ==/;\n" +
+"     _.-';   '-';-;_\n" +
+"    /\\\\  ;;    ;; //'. \n" +
+"   | ,\\\\_;_____; '/,  \\\n" +
+"   | | ';;--- ;;-' |   \\\n" +
+"   F |  ;     ;    |\\   \\\n" +
+"  J  .\\';    ;     | ;--t\n" +
+"  |__/ )      ;   / .'';|\n" +
+"  j  '-,__   __.---;    (\n" +
+"   )  ( =r'-| ' .  \\  '; )\n" +
+"   | : \"-s=-|   '  |   ; |\n" +
+"   | : ; \\  |   |  |     |\n" +
+"    L; :  L |      ;     |\n" +
+"   J ;    | |   :  ;     |\n" +
+"   | ;    J |   :   ;    |\n" +
+"   L.'     L|       (    |\n" +
+"  J ;  :   ||  '    ;    |\n" +
+"  | ;      ||  :    ;    |\n" +
+"  |,/  ;   ||       ;    \\\n" +
+"  |(   :   ||   __.'     |\n" +
+"  | >  |   ||,-'         |\n" +
+"  |/   ;   |Z_,          |\n" +
+"  (,  _L---J   '.        |\n" +
+"   '-'|       |  '--._   |\n" +
+"      |       :     ; '-r\n" +
+"      |   ;   |     |; ||-._____\n" +
+"    __/ | ;   '|    |; ;(-'.--' ';\n" +
+"  ,'_'/;  ',   ; \\ ( _L_.'-._'---,;\n" +
+" '-----L___;--.,__;-' --''-.'---'");
+                            
+                            System.out.println("parabens jovem aventureiro, porem este foi apenas o 1º teste, a partir daqui as coisas ficarão mais dificeis,\n" +
+" muitos tentaram e nenhum até hoje conseguiu, se você não deseja perecer onde outros sucumbiram é a chance de voltar, você deseja continuar?");
+                            System.out.println("╔════•ೋೋ•════╗ \n" +
+                                               "  1- [Sim]  ||  2- [Não]\n" +
+                                               "╚════•ೋೋ•════╝");
+                            
+                            dados1 = entrarDadosInt();//entrada de dados para a decisão acima
+                            switch(dados1){
+                                case 1:
+                                    System.out.println("A partir daqui não se pode mais desistir e a morte será certa porém caso consiga você obtera algo de valor inestimavel");
+                                    break;
+                                case 2:
+                                    System.out.println("Voltando para a casa, fim da jornada...");
+                                    break;
+                                default :
+                                    System.out.println("Opção invalida!");
+                            }
+                            break;// fim break case 3 do switch do primeiro desafio
+                            
+                        
                     }// FIM SWITCH
                     
-               
-                    
-              }//FIM DO IF
+               }//FIM DO IF
                     
                     
-                else
+                else 
                     System.out.println("Saindo do jogo...");
-                break;
-                        
+                break; //FIM BREAK CASE 1
                 
                 
                 
@@ -210,10 +271,10 @@ public class magic_math
                 System.out.println("Saindo do jogo...");
                 break;
                 
-        }
+        } //FIM SWITCH PRINCIPAL
         
         return op;
-    }
+    }// FIM STATIC OPCOESMENU
     
      
      
