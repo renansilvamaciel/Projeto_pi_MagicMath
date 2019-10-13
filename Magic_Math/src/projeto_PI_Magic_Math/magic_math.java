@@ -24,6 +24,8 @@ public class magic_math
     {
         System.out.println("Salve quebrada!");
         System.out.println("hello");
+        System.out.println("salve cuck"); // teste
+        
     }
 }
 
