@@ -150,19 +150,19 @@ public class magic_math
                     
                     switch(dados1){
                         case 1:
-                            System.out.println("Você errou");
+                            System.out.println("Você errou!");
                             break;
                             
                         case 2:
-                            System.out.println("Você errou");
+                            System.out.println("Você errou!");
                             break;
                             
                         case 3:
-                            System.out.println("Parabéns você acertou");
+                            System.out.println("Parabéns você acertou!");
                             break;
                             
                         case 4:
-                            System.out.println("Você errou");
+                            System.out.println("Você errou!");
                     }
                     
                 }
