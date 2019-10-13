@@ -169,7 +169,7 @@ public class magic_math
                 
                 System.out.println("Trabalho Projeto Integrador (P.I)");
                 System.out.println("Turma 1ºA TADS - Noturno, 1º Semestre, 2019");
-                System.out.println("Desenvolvido por Marcos vinicius Santos Souza, Renan Maciel e Matheus");
+                System.out.println("Desenvolvido por Marcos vinicius Santos Souza, Renan Maciel e Matheus Caetano");
                 break;
                 
                 
