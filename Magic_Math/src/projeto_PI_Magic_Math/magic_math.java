@@ -52,7 +52,7 @@ public class magic_math
 "   |         e a ordem em nosso mundo, você aceita continuar?        |\n" +
 "  |                                              ____________________|_ \n" +
 "  |  ___________________-------------------------                      `\\\n" +
-"  |/`--_                ╔══════════════•ೋೋ•══════════════╗                   |\n" +
+"  |/`--_                 ╔═════•ೋೋ•═════╗                   |\n" +
 "  ||[ ]||                   1- [Sim]   || 2- [Não]   ___________________/\n" +
 "   \\===/___________________--------------------------");
              
@@ -62,7 +62,7 @@ public class magic_math
                 
                 if (dados == 1){
                     System.out.println("╔════════════════•ೋೋ•════════════╗ \n" +
-                                       "  Informe o seu nome:\n" +
+                                       "                   Informe o seu nome:\n" +
                                        "╚════════════════•ೋೋ•════════════╝");
                   String nome =  entrarDadosStr(); // variavel criada para capturar o nome do usuario
                     System.out.println("                                   ....\n" +
@@ -142,7 +142,7 @@ public class magic_math
                     
                     int dados1;// Variavel criada para armazenar escolha do desafio e fazer looping do DO WHILE
                     System.out.println("╔════•ೋೋ•════╗ \n" +
-                                       " 1º Desafio\n" +
+                                       "       1º Desafio\n" +
                                        "╚════•ೋೋ•════╝");
                     do{
                     System.out.println("O qué é que de manhã tem 4 pernas, a tarde tem 2 e a noite tem 3?");
@@ -216,7 +216,7 @@ public class magic_math
                             System.out.println("parabens jovem aventureiro, porem este foi apenas o 1º teste, a partir daqui as coisas ficarão mais dificeis,\n" +
                             " muitos tentaram e nenhum até hoje conseguiu, se você não deseja perecer onde outros sucumbiram é a chance de voltar, você deseja continuar?");
                             System.out.println("╔══════════════•ೋೋ•═════════════╗ \n" +
-                                               "    1- [Sim]  ||  2- [Não]\n" +
+                                               "                   1- [Sim]  ||  2- [Não]\n" +
                                                "╚══════════════•ೋೋ•═════════════╝");
                             
                             dados1 = entrarDadosInt();//entrada de dados para a decisão acima
@@ -246,7 +246,7 @@ public class magic_math
                                     
                                     System.out.println("");
                                     System.out.println("╔════•ೋೋ•════╗ \n" +
-                                                       " 2º Desafio\n" +
+                                                       "        2º Desafio\n" +
                                                        "╚════•ೋೋ•════╝");
                                     System.out.println("Dentro de uma vila temos uma tribo cujo existem 35 seres mitologicos formado de minotauros e centauros,\n" +
                                                        " os quais juntos soma 100 pés, qual o numero respectivamente de minotaruros e centauros?\n" +
@@ -274,7 +274,7 @@ public class magic_math
                 
             case 2:
                 System.out.println("╔════•ೋೋ•════╗ \n" +
-                                   " Historias\n" +
+                                   "          Historias\n" +
                                    "╚════•ೋೋ•════╝");
                 break;
                 
@@ -284,7 +284,7 @@ public class magic_math
                 
             case 3:
                 System.out.println("╔════•ೋೋ•════╗ \n" +
-                                   " Créditos\n" +
+                                   "          Créditos\n" +
                                    "╚════•ೋೋ•════╝");
                 
                 System.out.println("Trabalho Projeto Integrador (P.I)");
@@ -331,7 +331,7 @@ public class magic_math
         int opcao;
         
         System.out.println("                           ╔════•ೋೋ•════╗ \n" +
-                           "                            Magic Math\n" +
+                           "                                   Magic Math\n" +
                            "                           ╚════•ೋೋ•════╝");
          System.out.println("                                   ︻雷魔▅▆▇◤");
          System.out.println("");
@@ -381,7 +381,7 @@ public class magic_math
          
          System.out.println("");
         System.out.println("╔════•ೋೋ•════╗ \n" +
-                           "    Menu\n" +
+                           "          Menu\n" +
                            "╚════•ೋೋ•════╝");
         
         
