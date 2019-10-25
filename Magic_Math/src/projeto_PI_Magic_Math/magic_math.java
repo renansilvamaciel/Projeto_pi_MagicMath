@@ -19,12 +19,109 @@ import java.util.Scanner;
 
 public class magic_math 
 {
-        static int opcoesMenu(int op){ // opções ao escolher uma das alternativas do menu inicial
+         public static Scanner teste = new Scanner(System.in);
+    
+    public static void main(String[] args) {
+        menu();
         
+       }
+      static int entrarDadosInt(){ 
+      Scanner entrar = new Scanner(System.in);
+      int dados = teste.nextInt();
+      return dados;
+   }
+      static String entrarDadosStr(){ // captura os dados tipo Strings para salvar em variaveis
+      Scanner entrar = new Scanner(System.in);
+      String dados = entrar.next();
+      return dados;
+   }
+   static void menu(){
+        int opcao ;
+        do{
+            System.out.println("   ╔════•ೋೋ•════╗ \n" +
+                           "              Magic Math\n" +
+                           "       ╚════•ೋೋ•════╝");
+         System.out.println("             ︻雷魔▅▆▇◤");
+         System.out.println("");
+         System.out.println("                        /\\\n" +
+"                        ||\n" +
+"                        ||\n" +
+"                        ||\n" +
+"                        ||                                               ~-----~\n" +
+"                        ||                                            /===--  ---~~~\n" +
+"                        ||                   ;'                 /==~- --   -    ---~~~\n" +
+"                        ||                (/ ('              /=----         ~~_  --(  '\n" +
+"                        ||             ' / ;'             /=----               \\__~\n" +
+"     '                ~==_=~          '('             ~-~~      ~~~~        ~~~--\\~'\n" +
+"     \\\\                (c_\\_        .i.             /~--    ~~~--   -~     (     '\n" +
+"      `\\               (}| /       / : \\           / ~~------~     ~~\\   (\n" +
+"      \\ '               ||/ \\      |===|          /~/             ~~~ \\ \\(\n" +
+"      ``~\\              ~~\\  )~.~_ >._.< _~-~     |`_          ~~-~     )\\\n" +
+"       '-~                 {  /  ) \\___/ (   \\   |` ` _       ~~         '\n" +
+"       \\ -~\\                -<__/  -   -  L~ -;   \\\\    \\ _ _/\n" +
+"       `` ~~=\\                  {    :    }\\ ,\\    ||   _ :(\n" +
+"        \\  ~~=\\__                \\ _/ \\_ /  )  } _//   ( `|'\n" +
+"        ``    , ~\\--~=\\           \\     /  / _/ / '    (   '\n" +
+"         \\`    } ~ ~~ -~=\\   _~_  / \\ / \\ )^ ( // :_  / '\n" +
+"         |    ,          _~-'   '~~__-_  / - |/     \\ (\n" +
+"          \\  ,_--_     _/              \\_'---', -~ .   \\\n" +
+"           )/      /\\ / /\\   ,~,         \\__ _}     \\_  \"~_\n" +
+"           ,      { ( _ )'} ~ - \\_    ~\\  (-:-)       \"\\   ~ \n" +
+"                  /'' ''  )~ \\~_ ~\\   )->  \\ :|    _,       \" \n" +
+"                 (\\  _/)''} | \\~_ ~  /~(   | :)   /          }\n" +
+"                <``  >;,,/  )= \\~__ {{{ '  \\ =(  ,   ,       ;\n" +
+"               {o_o }_/     |v  '~__  _    )-v|  \"  :       ,\"\n" +
+"               {/\"\\_)       {_/'  \\~__ ~\\_ \\\\_} '  {        /~\\\n" +
+"               ,/!          '_/    '~__ _-~ \\_' :  '      ,\"  ~ \n" +
+"              (''`                  /,'~___~    | /     ,\"  \\ ~' \n" +
+"             '/, )                 (-)  '~____~\";     ,\"     , }\n" +
+"           /,')                    / \\         /  ,~-\"       '~'\n" +
+"       (  ''/                     / ( '       /  /          '~'\n" +
+"    ~ ~  ,, /) ,                 (/( \\)      ( -)          /~'\n" +
+"  (  ~~ )`  ~}                   '  \\)'     _/ /           ~'\n" +
+" { |) /`,--.(  }'                    '     (  /          /~'\n" +
+"(` ~ ( c|~~| `}   )                        '/:\\         ,'\n" +
+" ~ )/``) )) '|),                          (/ | \\)                     \n" +
+"  (` (-~(( `~`'  )                        ' (/ '\n" +
+"   `~'    )'`')                              '\n" +
+"     ` ``");
+         
+         
+         System.out.println("");
+        System.out.println("╔════•ೋೋ•════╗ \n" +
+                           "          Menu\n" +
+                           "╚════•ೋೋ•════╝");
         
-        switch(op){
-            case 1:  //AQUI VAI ACONTECER TODO O JOGO
-                System.out.println("                                             _______________________\n" +
+            System.out.println(""
+                    + "     _\n" +
+"            ,---.          U\n" +
+"           ;     \\         ;\n" +
+"       .==\\\"/==.  `-.___.-'\n" +
+"      ((+) .  .:)\n" +
+"      |`.-(o)-.'|\n" +
+"      \\/  \\_/  \\/         ");
+        System.out.print(" 1- Jogar: \n 2- Historia: \n 3- Créditos: \n 4- Sair:\n Escolha uma opção:  "); 
+        opcao = entrarDadosInt();
+         switch (opcao){
+             case 1:
+                 Jogar();
+                 break;
+             case 2: 
+                 Historia();
+                 break;
+              case 3: 
+                 Creditos();
+                 break;  
+                 case 4: 
+                 System.out.println("Muito Obrigado por Jogar, Até a Proxima!");
+                 break;
+                 default:
+                  System.out.println("Escolha uma opção Valida");   
+         }
+        }while(opcao!=4);
+    }
+   static void Historia(){
+        System.out.println("                  _______________________\n" +
 "   _______________________-------------------                       `\\\n" +
 " /:--__                                                              |\n" +
 "||< > |                                   ___________________________/\n" +
@@ -55,13 +152,18 @@ public class magic_math
 "  |/`--_                 ╔═════•ೋೋ•═════╗                   |\n" +
 "  ||[ ]||                   1- [Sim]   || 2- [Não]   ___________________/\n" +
 "   \\===/___________________--------------------------");
+        int opcao = entrarDadosInt() ;
+        if(opcao==1){
+            Jogar();
+        }
+        else{
+            menu();
+        }
              
-                //COMEÇO DO JOGO A PARTIR DA DECISÃO SIM
-                
-                int dados = entrarDadosInt(); // variavel criada para capturar a escolha a cima
-                
-                if (dados == 1){
-                    System.out.println("╔════════════════•ೋೋ•════════════╗ \n" +
+        
+    }
+   static void Jogar(){
+       System.out.println("             ╔════════════════•ೋೋ•════════════╗ \n" +
                                        "                   Informe o seu nome:\n" +
                                        "╚════════════════•ೋೋ•════════════╝");
                   String nome =  entrarDadosStr(); // variavel criada para capturar o nome do usuario
@@ -257,158 +359,23 @@ public class magic_math
                                     break;
                                 default :
                                     System.out.println("Opção invalida!");
-                            }
-                            break;// fim break case 3 do switch do primeiro desafio
+                                    
+                            }break;// fim break case 3 do switch do primeiro desafio
+                            
                             
                         
-                    }// FIM SWITCH
+                    // FIM SWITCH
                     
                }//FIM DO IF
-                    
-                    
-                else 
-                    System.out.println("Saindo do jogo...");
-                break; //FIM BREAK CASE 1
-                
-                
-                
-            case 2:
-                System.out.println("╔════•ೋೋ•════╗ \n" +
-                                   "          Historias\n" +
-                                   "╚════•ೋೋ•════╝");
-                break;
-                
-                
-                
-                
-                
-            case 3:
-                System.out.println("╔════•ೋೋ•════╗ \n" +
+   }
+   static void Creditos(){
+ System.out.println("               ╔════•ೋೋ•════╗ \n" +
                                    "          Créditos\n" +
                                    "╚════•ೋೋ•════╝");
                 
                 System.out.println("Trabalho Projeto Integrador (P.I)");
                 System.out.println("Turma 1ºA TADS - Noturno, 1º Semestre, 2019");
                 System.out.println("Desenvolvido por Marcos vinicius Santos Souza, Renan Maciel e Matheus Caetano");
-                break;
-                
-                
-                
-                
-            case 4:
-                System.out.println("Saindo do jogo...");
-                break;
-                
-        } //FIM SWITCH PRINCIPAL
-        
-        return op;
-    }// FIM STATIC OPCOESMENU
-    
-     
-     
-     
-     
-   static int entrarDadosInt(){ // captura os dados de numeros inteiros para salvar em variaveis
-      Scanner entrar = new Scanner(System.in);
-      int dados = entrar.nextInt();
-      return dados;
-   }
-   
-   static String entrarDadosStr(){ // captura os dados tipo Strings para salvar em variaveis
-      Scanner entrar = new Scanner(System.in);
-      String dados = entrar.next();
-      return dados;
-   }
-    
-   
-   
-   
-    
-    public static void main(String[] args) { // Corpo do programa
-        
-        Scanner entrar = new Scanner(System.in);
-        
-        int opcao;
-        
-        System.out.println("                           ╔════•ೋೋ•════╗ \n" +
-                           "                                   Magic Math\n" +
-                           "                           ╚════•ೋೋ•════╝");
-         System.out.println("                                   ︻雷魔▅▆▇◤");
-         System.out.println("");
-         System.out.println("                        /\\\n" +
-"                        ||\n" +
-"                        ||\n" +
-"                        ||\n" +
-"                        ||                                               ~-----~\n" +
-"                        ||                                            /===--  ---~~~\n" +
-"                        ||                   ;'                 /==~- --   -    ---~~~\n" +
-"                        ||                (/ ('              /=----         ~~_  --(  '\n" +
-"                        ||             ' / ;'             /=----               \\__~\n" +
-"     '                ~==_=~          '('             ~-~~      ~~~~        ~~~--\\~'\n" +
-"     \\\\                (c_\\_        .i.             /~--    ~~~--   -~     (     '\n" +
-"      `\\               (}| /       / : \\           / ~~------~     ~~\\   (\n" +
-"      \\ '               ||/ \\      |===|          /~/             ~~~ \\ \\(\n" +
-"      ``~\\              ~~\\  )~.~_ >._.< _~-~     |`_          ~~-~     )\\\n" +
-"       '-~                 {  /  ) \\___/ (   \\   |` ` _       ~~         '\n" +
-"       \\ -~\\                -<__/  -   -  L~ -;   \\\\    \\ _ _/\n" +
-"       `` ~~=\\                  {    :    }\\ ,\\    ||   _ :(\n" +
-"        \\  ~~=\\__                \\ _/ \\_ /  )  } _//   ( `|'\n" +
-"        ``    , ~\\--~=\\           \\     /  / _/ / '    (   '\n" +
-"         \\`    } ~ ~~ -~=\\   _~_  / \\ / \\ )^ ( // :_  / '\n" +
-"         |    ,          _~-'   '~~__-_  / - |/     \\ (\n" +
-"          \\  ,_--_     _/              \\_'---', -~ .   \\\n" +
-"           )/      /\\ / /\\   ,~,         \\__ _}     \\_  \"~_\n" +
-"           ,      { ( _ )'} ~ - \\_    ~\\  (-:-)       \"\\   ~ \n" +
-"                  /'' ''  )~ \\~_ ~\\   )->  \\ :|    _,       \" \n" +
-"                 (\\  _/)''} | \\~_ ~  /~(   | :)   /          }\n" +
-"                <``  >;,,/  )= \\~__ {{{ '  \\ =(  ,   ,       ;\n" +
-"               {o_o }_/     |v  '~__  _    )-v|  \"  :       ,\"\n" +
-"               {/\"\\_)       {_/'  \\~__ ~\\_ \\\\_} '  {        /~\\\n" +
-"               ,/!          '_/    '~__ _-~ \\_' :  '      ,\"  ~ \n" +
-"              (''`                  /,'~___~    | /     ,\"  \\ ~' \n" +
-"             '/, )                 (-)  '~____~\";     ,\"     , }\n" +
-"           /,')                    / \\         /  ,~-\"       '~'\n" +
-"       (  ''/                     / ( '       /  /          '~'\n" +
-"    ~ ~  ,, /) ,                 (/( \\)      ( -)          /~'\n" +
-"  (  ~~ )`  ~}                   '  \\)'     _/ /           ~'\n" +
-" { |) /`,--.(  }'                    '     (  /          /~'\n" +
-"(` ~ ( c|~~| `}   )                        '/:\\         ,'\n" +
-" ~ )/``) )) '|),                          (/ | \\)                     \n" +
-"  (` (-~(( `~`'  )                        ' (/ '\n" +
-"   `~'    )'`')                              '\n" +
-"     ` ``");
-         
-         
-         System.out.println("");
-        System.out.println("╔════•ೋೋ•════╗ \n" +
-                           "          Menu\n" +
-                           "╚════•ೋೋ•════╝");
-        
-        
-        System.out.println("1- Jogar: ");
-        System.out.println("2- Historia: ");
-        System.out.println("3- Créditos: ");
-        System.out.println("4- Sair: ");
-        System.out.println("");
-        System.out.println("Escolha uma opção: ");
-        
-            System.out.println(""
-                    + "     _\n" +
-"            ,---.          U\n" +
-"           ;     \\         ;\n" +
-"       .==\\\"/==.  `-.___.-'\n" +
-"      ((+) .  .:)\n" +
-"      |`.-(o)-.'|\n" +
-"      \\/  \\_/  \\/         ");
-            
-            
-            
-       opcao = entrar.nextInt(); // capturando dados
-       
-       int opMenu = opcoesMenu(opcao); // criando variavel que recebera os dados coletados e passara para a função switch "opcoesMenu"
-                    
-    }
+}
     
 }
-
-    
