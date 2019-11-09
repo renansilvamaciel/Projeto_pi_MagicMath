@@ -152,6 +152,7 @@ public class magic_math
        pontuacaoFunc = desafio5(pontuacaoFunc);
        nomeFunc = historiaJogo_6(nomeFunc);
        historiaJogo_7();
+       pontuacaoFunc = desafio6(pontuacaoFunc);
        
        
        
@@ -645,6 +646,147 @@ public class magic_math
     }
     
     static int desafio6(int pontuacao){
+        byte opcao, coracaoCont = 3;
+        Scanner entrar = new Scanner(System.in);
+        
+        System.out.println("Finalmente o nosso héroi pode subir na torre principal, e ele de depara com um telescopio,\n"
+                + " o antigo rei amava olhar as estrelas, dizia que elas eram um sinal de luz e esperança,\n"
+                + " porém o nosso héroi não conseguia entender como onde está a pista para a cordenada final até que ele olhou no telescopio e percebeu um padrão nas estrelas.");
+        
+        System.out.println("");
+        System.out.print("            *          .\n" +
+"                   *       '\n" +
+"              *                *\n" +
+"\n" +
+"\n" +
+"\n" +
+"\n" +
+"\n" +
+"   *   '*\n" +
+"           *\n" +
+"                *\n" +
+"                       *\n" +
+"               *\n" +
+"                     *\n" +
+"\n" +
+"         .                      .\n" +
+"         .                      ;\n" +
+"         :                  - --+- -\n" +
+"         !           .          !\n" +
+"         |        .             .\n" +
+"         |_         +\n" +
+"      ,  | `.\n" +
+"--- --+-<#>-+- ---  --  -\n" +
+"      `._|_,'\n" +
+"         T\n" +
+"         |\n" +
+"         !\n" +
+"         :         . : \n" +
+"         .       *");System.out.print("  .       . \n" +
+" +  :      .\n" +
+"           :       _\n" +
+"       .   !   '  (_)\n" +
+"          ,|.' \n" +
+"-  -- ---(-O-`--- --  -\n" +
+"         ,`|'`.\n" +
+"       ,   !    .\n" +
+"           :       :  \" \n" +
+"           .     --+--\n" +
+" .:        .       !");System.out.print(" ` : | | | |:  ||  :     `  :  |  |+|: | : : :|   .        `              .\n" +
+"      ` : | :|  ||  |:  :    `  |  | :| : | : |:   |  .                    :\n" +
+"         .' ':  ||  |:  |  '       ` || | : | |: : |   .  `           .   :.\n" +
+"                `'  ||  |  ' |   *    ` : | | :| |*|  :   :               :|\n" +
+"        *    *       `  |  : :  |  .      ` ' :| | :| . : :         *   :.||\n" +
+"             .`            | |  |  : .:|       ` | || | : |: |          | ||\n" +
+"      '          .         + `  |  :  .: .         '| | : :| :    .   |:| ||\n" +
+"         .                 .    ` *|  || :       `    | | :| | :      |:| |\n" +
+" .                .          .        || |.: *          | || : :     :|||\n" +
+"        .            .   . *    .   .  ` |||.  +        + '| |||  .  ||`\n" +
+"     .             *              .     +:`|!             . ||||  :.||`\n" +
+" +                      .                ..!|*          . | :`||+ |||`\n" +
+"     .                         +      : |||`        .| :| | | |.| ||`     .\n" +
+"       *     +   '               +  :|| |`     :.+. || || | |:`|| `\n" +
+"                            .      .||` .    ..|| | |: '` `| | |`  +\n" +
+"  .       +++                      ||        !|!: `       :| |\n" +
+"              +         .      .    | .      `|||.:      .||    .      .    `\n" +
+"          '                           `|.   .  `:|||   + ||'     `");
+        
+        System.out.println("");
+        System.out.println("╔════•ೋೋ•════╗ \n" +
+                           "        6º Desafio\n" +
+                           "╚════•ೋೋ•════╝");
+        
+        System.out.println("Considere a sequência de estrelas infinita: 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, ...  Qual é o milésimo termo dessa sequência? ");
+        
+        do{
+                                    
+                                    System.out.println("[1]- 45");
+                                    System.out.println("[2]- 47");
+                                    System.out.println("[3]- 44");
+                                    System.out.println("[4]- 46");
+                                    opcao = entrar.nextByte();
+                                    
+                                    switch(opcao){
+                                        case 1:
+                                           System.out.println("Você Acertou parabens!");
+                                            pontuacao = pontuacao + 10;
+                                            System.err.println("Pontuação: " +pontuacao);
+                                            break;
+                                            
+                                        case 2:
+                                           System.out.println("Você errou, tente novamente!");
+                                           coracaoCont--;
+                                           pontuacao = pontuacao - 10;
+                                           System.err.println("Pontuação: " +pontuacao);
+                                           System.out.println("Coração " +coracaoCont+ " / 3");
+                                           if(coracaoCont == 0){
+                                                System.out.println("");
+                                                System.err.println("Suas vidas acabaram, você morreu!");
+                                                System.out.println("");
+                                                main(null);
+                                                break;
+                                            }
+                                           break;
+                                            
+                                        case 3:
+                                            System.out.println("Você errou, tente novamente!");
+                                           coracaoCont--;
+                                           pontuacao = pontuacao - 10;
+                                           System.err.println("Pontuação: " +pontuacao);
+                                           System.out.println("Coração " +coracaoCont+ " / 3");
+                                           if(coracaoCont == 0){
+                                                System.out.println("");
+                                                System.err.println("Suas vidas acabaram, você morreu!");
+                                                System.out.println("");
+                                                main(null);
+                                                break;
+                                            }
+                                           break;
+                                            
+                                        case 4:
+                                           System.out.println("Você errou, tente novamente!");
+                                           coracaoCont--;
+                                           pontuacao = pontuacao - 10;
+                                           System.err.println("Pontuação: " +pontuacao);
+                                           System.out.println("Coração " +coracaoCont+ " / 3");
+                                           if(coracaoCont == 0){
+                                                System.out.println("");
+                                                System.err.println("Suas vidas acabaram, você morreu!");
+                                                System.out.println("");
+                                                main(null);
+                                                break;
+                                            }
+                                           break; 
+                                           
+                                        
+                                        default:
+                                            System.out.println("Opção invalida!");
+                                            break;
+                                    }//FIM SWITCH DESAFIO 2
+
+                            
+                                    }while(opcao != 1);
+        
         
         return pontuacao;
     }
@@ -1061,14 +1203,12 @@ public class magic_math
     
     static void historiaJogo_7(){
     Scanner entrar = new Scanner(System.in);
-    int resposta;
+    int resposta, coracao = 3;
     int vetor[] = {0, 0, 0};
     Random aleatorio = new Random();
-    int valorAleatorio = aleatorio.nextInt(2);
     
-    for(int i = 0; i < vetor.length; i++){
-        vetor[i] = valorAleatorio;
-    }
+    
+    
     
         System.out.println("");
         System.out.println("Agora finalmente dentro do castelo o objetivo de nosso heroi está mais perto\n"
@@ -1120,18 +1260,42 @@ public class magic_math
                 + "tudo que eu quero é poder ver a Deusa divina mais uma vez e se você chegar na torre principal esta magia será desfeita, \n"
                 + "existem 3 portas a sua frente, apenas uma ira te levar a escada que sobre até a torre principal e as outras duas irão te matar, escolha sabiamente, porém essas portas mudam aleatoriamente, boa sorte.");
         
+        
+        
+        do{
+        int valorAleatorio = aleatorio.nextInt(2);    
+        for(int i = 0; i < vetor.length; i++){
+        vetor[i] = valorAleatorio;
+        }   
+            
         System.out.println("");
-        System.out.println("Escolha sabiamente a sua porta, Porta[1], Porta[2], Porta[3]?");
+        System.out.println("Escolha sabiamente a sua porta, Porta[0], Porta[1], Porta[2]?");
         resposta = entrar.nextInt();
         
         if(vetor[valorAleatorio] == resposta){
-            System.out.println("Parabéns você escolheu a porta certa");
+            System.out.println("Parabéns você escolheu a porta certa!");
             System.out.println("");
+            break;
+            
         }else{
+            coracao--;
             System.out.println("");
-            System.err.println("Você escolheu a porta errado, fim de jogo você morreu!");
+            System.err.println("Você escolheu a porta errado, tente novamente!");
+            System.err.println("Coração "+coracao+" / 3");
             System.out.println("");
-            main(null);
+           
         }
+        }while(coracao != 0);
+        
+        if(coracao == 0){
+        System.out.println("");
+        System.err.println("Suas chances acabaram, você morreu!");
+        System.out.println("");
+        main(null);}
+        
+        
 }
+    
+    
+    //FIM
 }
