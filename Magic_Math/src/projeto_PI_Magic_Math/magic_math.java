@@ -14,6 +14,7 @@
  */
 package projeto_PI_Magic_Math;
 
+import java.util.Random;
 import java.util.Scanner;
 
 
@@ -150,15 +151,18 @@ public class magic_math
        nomeFunc = historiaJogo_5(nomeFunc);
        pontuacaoFunc = desafio5(pontuacaoFunc);
        nomeFunc = historiaJogo_6(nomeFunc);
+       historiaJogo_7();
        
-       fimJogo(pontuacao, nomeFunc);
+       
+       
+     //  fimJogo(pontuacao, nomeFunc);
     }
     
     static void historia(){
-        
-        
-        
-        
+        System.out.println("");
+        System.out.println("╔════•ೋೋ•════╗ \n" +
+                           "     Historia do Jogo\n" +
+                           "╚════•ೋೋ•════╝");
     }
     
     static void creditos(){
@@ -557,7 +561,7 @@ public class magic_math
                            "╚════•ೋೋ•════╝");
         System.out.println("Para construir um triângulo não podemos utilizar qualquer medida, tem que seguir a condição de existência:\n" +
                          "Para construir um triângulo é necessário que a medida de qualquer um dos lados seja"
-                + " menor que a soma das medidas dos outros dois e maior que o valor absoluto da diferença entre essas medidas."
+                + " menor que a soma das medidas dos outros dois e maior que o valor absoluto da diferença entre essas medidas.\n"
                 + "| b - c | < a < b + c\n" +
                   "| a - c | < b < a + c\n" +
                   "| a - b | < c < a + b");
@@ -640,7 +644,13 @@ public class magic_math
        return pontuacao;
     }
     
+    static int desafio6(int pontuacao){
+        
+        return pontuacao;
+    }
+    
     static void fimJogo(int pontuacao, String nome){
+        System.out.println("");
         System.out.println("Parabéns "+nome+", você conseguiu finalizar a sua jornada, graças a você o reino de Eldia foi salvo, porém isso é só o começo...");
         
         System.out.println("");
@@ -1005,6 +1015,7 @@ public class magic_math
     
     static String historiaJogo_6(String nome){
         System.out.println("");
+        System.out.println("");
                             System.out.println("Deusa divina: ");
                             System.out.println("");
                             System.out.println(""+ "          .;;;,.,\n" +
@@ -1047,4 +1058,80 @@ public class magic_math
             
             return nome;
     }
+    
+    static void historiaJogo_7(){
+    Scanner entrar = new Scanner(System.in);
+    int resposta;
+    int vetor[] = {0, 0, 0};
+    Random aleatorio = new Random();
+    int valorAleatorio = aleatorio.nextInt(2);
+    
+    for(int i = 0; i < vetor.length; i++){
+        vetor[i] = valorAleatorio;
+    }
+    
+        System.out.println("");
+        System.out.println("Agora finalmente dentro do castelo o objetivo de nosso heroi está mais perto\n"
+                + " do que nunca porém a presença de um grande mal se aproximando tambem,\n"
+                + " o objetivo dele neste momento é chegar na torre principal mas o castelo é extremamente grande a ponto dele poder se perder dentro");
+        
+        System.out.println("....................");
+        
+        System.out.println("                                    .\"\"--..__\n" +
+"                     _                     []       ``-.._\n" +
+"                  .'` `'.                  ||__           `-._\n" +
+"                 /    ,-.\\                 ||_ ```---..__     `-.\n" +
+"                /    /:::\\\\               /|//}          ``--._  `.\n" +
+"                |    |:::||              |////}                `-. \\\n" +
+"                |    |:::||             //'///                    `.\\\n" +
+"                |    |:::||            //  ||'                      `|\n" +
+"                /    |:::|/        _,-//\\  ||\n" +
+"               /`    |:::|`-,__,-'`  |/  \\ ||\n" +
+"             /`  |   |'' ||           \\   |||\n" +
+"           /`    \\   |   ||            |  /||\n" +
+"         |`       |  |   |)            \\ | ||\n" +
+"        |          \\ |   /      ,.__    \\| ||\n" +
+"        /           `         /`    `\\   | ||\n" +
+"       |                     /        \\  / ||\n" +
+"       |                     |        | /  ||\n" +
+"       /         /           |        `(   ||\n" +
+"      /          .           /          )  ||\n" +
+"     |            \\          |     ________||\n" +
+"    /             |          /     `-------.|\n" +
+"   |\\            /          |              ||\n" +
+"   \\/`-._       |           /              ||\n" +
+"    //   `.    /`           |              ||\n" +
+"   //`.    `. |             \\              ||\n" +
+"  ///\\ `-._  )/             |              ||\n" +
+" //// )   .(/               |              ||\n" +
+" ||||   ,'` )               /              //\n" +
+" ||||  /                    /             || \n" +
+" `\\\\` /`                    |             // \n" +
+"     |`                     \\            ||  \n" +
+"    /                        |           //  \n" +
+"  /`                          \\         //   \n" +
+"/`                            |        ||    \n" +
+"`-.___,-.      .-.        ___,'        (/    \n" +
+"         `---'`   `'----'`");
+        
+        System.out.println("Olá humano eu posso ajuda-lo, eu sou a Morte a contrario da deusa da divina que não pode entrar neste castelo eu estou aprisionado aqui, \n"
+                + "quando o antigo rei enlouqueceu e começou a atacar o seu proprio povo eu estava observando a final eu sou onisciente e onipresente \n"
+                + "eu sabia quando o fim do rei iria chegar porém não imaginaria que em seu ultimo suspiro ele iria conjurar uma poderosa magia de aprisionamento em mim, \n"
+                + "tudo que eu quero é poder ver a Deusa divina mais uma vez e se você chegar na torre principal esta magia será desfeita, \n"
+                + "existem 3 portas a sua frente, apenas uma ira te levar a escada que sobre até a torre principal e as outras duas irão te matar, escolha sabiamente, porém essas portas mudam aleatoriamente, boa sorte.");
+        
+        System.out.println("");
+        System.out.println("Escolha sabiamente a sua porta, Porta[1], Porta[2], Porta[3]?");
+        resposta = entrar.nextInt();
+        
+        if(vetor[valorAleatorio] == resposta){
+            System.out.println("Parabéns você escolheu a porta certa");
+            System.out.println("");
+        }else{
+            System.out.println("");
+            System.err.println("Você escolheu a porta errado, fim de jogo você morreu!");
+            System.out.println("");
+            main(null);
+        }
+}
 }
