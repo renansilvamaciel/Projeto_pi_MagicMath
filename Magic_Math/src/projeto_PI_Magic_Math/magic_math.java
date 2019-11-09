@@ -153,10 +153,12 @@ public class magic_math
        nomeFunc = historiaJogo_6(nomeFunc);
        historiaJogo_7();
        pontuacaoFunc = desafio6(pontuacaoFunc);
+       historiaJogo_8(nomeFunc);
+       historiaJogo_9(nomeFunc);
+       pontuacaoFunc = desafio7(pontuacaoFunc);
        
        
-       
-     //  fimJogo(pontuacao, nomeFunc);
+      //fimJogo(pontuacao, nomeFunc);
     }
     
     static void historia(){
@@ -791,6 +793,14 @@ public class magic_math
         return pontuacao;
     }
     
+    static int desafio7(int pontuacao){
+        int coracao = 3;
+        int dadosVida;
+        Random aleatorio = new Random();
+        dadosVida = aleatorio.nextInt(6) + 1;
+        return pontuacao;
+    }
+    
     static void fimJogo(int pontuacao, String nome){
         System.out.println("");
         System.out.println("Parabéns "+nome+", você conseguiu finalizar a sua jornada, graças a você o reino de Eldia foi salvo, porém isso é só o começo...");
@@ -1196,7 +1206,7 @@ public class magic_math
 " '-----L___;--.,__;-' --''-.'---'");
                             
             System.out.println("Olá " +nome+ " a partir daqui eu não vou mais poder te acompanhar e tudo dependera apenas de você,"
-                    + " dentro deste castelo encontra-se a cordenada para salvar o nosso reino, que a benção de Eldia caia sobre você)");
+                    + " dentro deste castelo encontra-se a cordenada para salvar o nosso reino, que a benção dos deuses caia sobre você)");
             
             return nome;
     }
@@ -1295,6 +1305,99 @@ public class magic_math
         
         
 }
+    
+    static void historiaJogo_8(String nome){
+        
+        System.out.println("Morte: ");
+        System.out.println("                                    .\"\"--..__\n" +
+"                     _                     []       ``-.._\n" +
+"                  .'` `'.                  ||__           `-._\n" +
+"                 /    ,-.\\                 ||_ ```---..__     `-.\n" +
+"                /    /:::\\\\               /|//}          ``--._  `.\n" +
+"                |    |:::||              |////}                `-. \\\n" +
+"                |    |:::||             //'///                    `.\\\n" +
+"                |    |:::||            //  ||'                      `|\n" +
+"                /    |:::|/        _,-//\\  ||\n" +
+"               /`    |:::|`-,__,-'`  |/  \\ ||\n" +
+"             /`  |   |'' ||           \\   |||\n" +
+"           /`    \\   |   ||            |  /||\n" +
+"         |`       |  |   |)            \\ | ||\n" +
+"        |          \\ |   /      ,.__    \\| ||\n" +
+"        /           `         /`    `\\   | ||\n" +
+"       |                     /        \\  / ||\n" +
+"       |                     |        | /  ||\n" +
+"       /         /           |        `(   ||\n" +
+"      /          .           /          )  ||\n" +
+"     |            \\          |     ________||\n" +
+"    /             |          /     `-------.|\n" +
+"   |\\            /          |              ||\n" +
+"   \\/`-._       |           /              ||\n" +
+"    //   `.    /`           |              ||\n" +
+"   //`.    `. |             \\              ||\n" +
+"  ///\\ `-._  )/             |              ||\n" +
+" //// )   .(/               |              ||\n" +
+" ||||   ,'` )               /              //\n" +
+" ||||  /                    /             || \n" +
+" `\\\\` /`                    |             // \n" +
+"     |`                     \\            ||  \n" +
+"    /                        |           //  \n" +
+"  /`                          \\         //   \n" +
+"/`                            |        ||    \n" +
+"`-.___,-.      .-.        ___,'        (/    \n" +
+"         `---'`   `'----'`");
+        
+        System.out.println("Muito obrigado "+nome+", você me libertou de minha prisão de seculos e graças a você eu poderei ver a Deusa divina novamente ou como eu a conheço,\n"
+                + " Eldia a Deusa da vida, você ira encontrar o seu destino em breve, permita-me ajuda-lo irei te dar um item chamado dados da vida,\n"
+                + " caso você morra você podera rola-los e isso poderá te dar mais uma chance, salve o seu povo e cumpra o seu destino.");
+        System.out.println("");
+    }
+    
+    static void historiaJogo_9(String nome){
+        
+        System.out.println("");
+        System.out.println("Após "+nome+" conseguir as cordenadas finais na torre e obter o item 'Dados da vida' ele se dirige para o local final de sua jornada, "
+                + "porém ali ele já começava a sentir um grande mal, ele sabia que algo estava por vir e sentia cade vez mais isso chegando perto");
+        System.out.println("");
+        System.out.println("...............");
+        System.out.println("");
+        System.out.println("..................................");
+        System.out.println("");
+        System.out.println("Sauron o destruidor, Rei da nação de Marven: ");
+        System.out.println("          _\n" +
+"                              ==(W{==========-      /===-\n" +
+"                                ||  (.--.)         /===-_---~~~~~~~----__\n" +
+"                                | \\_,|**|,__      |===-~___            _,-'`\n" +
+"                   -==\\\\        `\\ ' `--'   ),    `//~\\\\   ~~~~`--._.-~\n" +
+"               ______-==|        /`\\_. .__/\\ \\    | |  \\\\          _-~`\n" +
+"         __--~~~  ,-/-==\\\\      (   | .  |~~~~|   | |   `\\       ,'\n" +
+"      _-~       /'    |  \\\\     )__/==0==-\\<>/   / /      \\     /\n" +
+"    .'        /       |   \\\\      /~\\___/~~\\/  /' /        \\   /\n" +
+"   /  ____  /         |    \\`\\.__/-~~   \\  |_/'  /          \\/'\n" +
+"  /-'~    ~~~~~---__  |     ~-/~         ( )   /'        _--~`\n" +
+"                    \\_|      /        _) | ;  ),   __--~~\n" +
+"                      '~~--_/      _-~/- |/ \\   '-~ \\\n" +
+"                     {\\__--_/}    / \\\\_>-|)<__\\      \\\n" +
+"                     /'   (_/  _-~  | |__>--<__|      |\n" +
+"                    |   _/) )-~     | |__>--<__|      |\n" +
+"                    / /~ ,_/       / /__>---<__/      |\n" +
+"                   o-o _//        /-~_>---<__-~      /\n" +
+"                   (^(~          /~_>---<__-      _-~\n" +
+"                  ,/|           /__>--<__/     _-~\n" +
+"               ,//('(          |__>--<__|     /                  .--_\n" +
+"              ( ( '))          |__>--<__|    |                 /' _-_~\\\n" +
+"           `-)) )) (           |__>--<__|    |               /'  /   ~\\`\\\n" +
+"          ,/,'//( (             \\__>--<__\\    \\            /'  //      ||\n" +
+"        ,( ( ((, ))              ~-__>--<_~-_  ~--__---~'/'/  /'       VV\n" +
+"      `~/  )` ) ,/|                 ~-_~>--<_/-__      __-~ _/\n" +
+"    ._-~//( )/ )) `                    ~~-'_/_/ /~~~~~__--~\n" +
+"     ;'( ')/ ,)(                              ~~~~~~~~\n" +
+"    ' ') '( (/");
+        
+        System.out.println("Olá " +nome+ " muito obrigado por me levar a cordenada, eu estava te observando de longe a muito tempo,\n"
+                + " uma de minhas videntes profetizou a minha morte pelas mãos de um jovem héroi do reino de Eldia, porém não irei perder,"
+                + " você irá conhecer o despero e terror de verdade!");
+        
+    }
     
     
     //FIM
