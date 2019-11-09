@@ -269,7 +269,7 @@ public class magic_math
                                                        "        2º Desafio\n" +
                                                        "╚════•ೋೋ•════╝");
                                     do{
-                                    System.out.println("Dentro de uma vila temos uma tribo cujo existem 35 seres mitologicos formado de minotauros e centauros,\n" +
+                                    System.out.println("Dentro de um vilarejo, temos uma tribo que possui existem 35 seres mitologicos, formado de minotauros e centauros,\n" +
                                                        " os quais juntos soma 100 pés, qual o numero respectivamente de minotaruros e centauros?\n" +
                                                        " ( use o sistema numerico M+C = 35 | 2M + 4C = 100 \" )");
                                     System.out.println("[1]- 20 Centauros e 15 Minotauros");
@@ -320,10 +320,10 @@ public class magic_math
         byte opcao;
         Scanner entrar = new Scanner(System.in);
         
-        System.out.println("( agora já no outro lado do largo o nosso heroi se depara com uma porta e entrando nessa porta ele encontra um grande alquimista louco desaparecido há decadas\n" +
-" chamado Nicolas flamel, Nicolas diz que a partir dali as coisas ficarão mais dificeis e que não bastara apenas ter um coração e sim 3,\n" +
-" Nicolas desenvolvel após anos de pesquisa o elixir da vida junto com base na famosa pedra filosofal e propoe toma- ló\n" +
-" porém para isso ele terá que dar a quantidade exata da formula para o Nicolas porque uma dosagem errado o levará a morte certa)");
+        System.out.println("( agora já no outro lado do lago, o nosso heroi se depara com uma porta, e entrando nessa porta, ele encontra um grande alquimista louco desaparecido há decadas\n" +
+" chamado Nicolas flamel. Nicolas diz que a partir dali as coisas ficarão mais dificeis e que não bastara apenas ter um coração, e sim 3.\n" +
+" Nicolas desenvolveu após anos de pesquisa, o elixir da vida junto com base na famosa pedra filosofal, e propoe para  o nosso heroi toma- ló.\n" +
+" Porém para isso ele terá que dar a quantidade exata da formula para o Nicolas, porque uma dosagem errada o levará a morte certa.)");
         
         System.out.println("                 .\n" +
 "\n" +
@@ -663,23 +663,24 @@ public class magic_math
 " |                             MAGIC MATH                          |\n" +
 " |                                                                  |\n" +
 " |      \"Assim como toda historia tem um começo está não            |\n" +
-"  |        seria diferente, A nossa historia se passa em algum       |\n" +
-"  |      seculo jás perdido em meio as ruinas do tempo,              |\n" +
-"  |      em uma terra média chamada Eldia quando a magia e o irreal  |\n" +
-"  |      ainda coexistiam, a partir deste ponto temos                 |\n" +
-"   |      um jovem rapaz chamado ..., que em poucos dias ele          |\n" +
-"   |       começaria uma jornada que mudaria a sua vida,              |\n" +
-"   |     a vida neste seculo não é nada facil, toda Eldia está       |\n" +
-"  |                                                                   |\n" +
+"  |        seria diferente, a nossa historia se passa em algum       |\n" +
+"  |      seculo já perdido, em meio as ruinas do tempo em uma terra   |\n" +
+"  |      média chamada Eldia, quando a magia e o irreal                |\n" +
+"  |      ainda coexistiam. A partir deste ponto temos                 |\n" +
+"   |     um jovem rapaz, que, em poucos dias começaria uma jornada     |\n" +
+"   |     que mudaria a sua vida.                                       |\n" +
 " |                                                                  |\n" +
+" |      \"a vida neste seculo não é nada facil, toda Eldia está     |\n" +
 " |      \"destruida há seculos, a historia e todo o conhecimento    |\n" +
 "  |        contido em nosso mundo está escasso, a busca por uma      |\n" +
 "  |      coordenada que levara até a verdade sobre o nosso mundo é   |\n" +
-"  |       constante e no meio disto a nação soberana de Marven quer  |\n" +
-"  |      impedir que alguem consiga obter tais conhecimentos,         |\n" +
+"  |       constante, e no meio disto, a nação soberana de Marven quer |\n" +
+"  |      impedir que qualquer um consiga obter tais conhecimentos,    |\n" +
 "   |      somente obetendo tais informações poderá reconstruir o      |\n" +
-"   |      mundo novamente e você é o escolhido para restaurar a paz   |\n" +
-"   |         e a ordem em nosso mundo, você aceita continuar?        |\n" +
+"   |      mundo novamente. E você, é o escolhido para restaurar a paz   |\n" +
+"   |         e a ordem em nosso mundo.                                   |\n" +
+"   |                                                                    |\n" +
+"   |                        você aceita continuar?                      |\n" +
 "  |                                              ____________________|_ \n" +
 "  |  ___________________-------------------------                      `\\\n" +
 "  |/`--_                 ╔═════•ೋೋ•═════╗                 |\n" +
@@ -738,13 +739,14 @@ public class magic_math
 "                 '._____|'.\\\\......'''''''.:..'''\n" +
 "                            \\\\ ");
                     
-                    System.out.println("olá, caro jovem " +nome+ ", eu sou o 13º mago celestial o ultimo de todos, seu pai foi um grande mago, um excelente matematico,\n" +
-" amigo e professor e ele confiou a mim a missão de guia-lo em seu destino, sua jornada se passara nas ruínas do mundo desconhecido\n" +
-" onde caso você consiga passar pelos 10 desafios divinos você obtera o conhecimento supremo para enfim restaurar o nosso mundo,\n" +
-" o povo de Eldia conta com você, salve o mundo e construa o seu destino...");    
+                    System.out.println(" olá, jovem " +nome+ ", eu sou o 13º mago celestial o ultimo de todos, seu pai foi um grande mago e um excelente matematico,\n" +
+" amigo e professor enconfiou a mim a missão de guia-lo em seu destino. "
++ "Sua jornada se passara nas ruínas do mundo desconhecido,\n" +
+" onde caso você consiga passar pelos 10 desafios divinos, você obterá o conhecimento supremo para enfim restaurar o nosso mundo,\n" +
+" o povo de Eldia conta com você. Salve o mundo e construa o seu destino...");    
                     
                     System.out.println("");
-                    System.out.println("chegando nas ruinas do mundo desconhecido o jovem se depara com o 1º problema,\n" +
+                    System.out.println("chegando nas ruinas do mundo desconhecido, o jovem se depara com o 1º problema.\n" +
 " para ele entrar dentro das ruínas ele terá que resolver o enigma de raciocinio");        
               
                     
@@ -826,13 +828,15 @@ public class magic_math
 " '-----L___;--.,__;-' --''-.'---'");
                             
                             System.out.println("Parabens jovem aventureiro, porem este foi apenas o 1º teste, a partir daqui as coisas ficarão mais dificeis,\n" +
-                            " muitos tentaram e nenhum até hoje conseguiu, se você não deseja perecer onde outros sucumbiram é a chance de voltar, você deseja continuar?");
+                            " muitos tentaram e nenhum até hoje conseguiu, se você não deseja perecer onde outros sucumbiram é a chance de voltar."
+                                    + ""
+                                    + "               você deseja continuar?");
                             System.out.println("╔═══════•ೋೋ•═══════╗ \n" +
                                                "        1- [Sim]  ||  2- [Não]\n" +
                                                "╚═══════•ೋೋ•═══════╝");
                             opcao = entrar.nextInt();
                             if(opcao == 1){
-                                System.out.println("A partir daqui não se pode mais desistir e a morte será certa porém caso consiga você obtera algo de valor inestimavel...");
+                                System.out.println("A partir daqui não se pode mais desistir e a morte será certa, porém caso consiga você obterá algo de valor inestimavel...");
                             }else{
                                     System.out.println("");
                                     System.err.println("Voltando para casa, fim da jornada...");
