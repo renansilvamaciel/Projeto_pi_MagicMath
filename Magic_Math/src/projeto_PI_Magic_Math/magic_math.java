@@ -158,7 +158,7 @@ public class magic_math
        pontuacaoFunc = desafio7(pontuacaoFunc);
        
        
-      //fimJogo(pontuacao, nomeFunc);
+      fimJogo(pontuacaoFunc, nomeFunc);
     }
     
     static void historia(){
@@ -193,6 +193,8 @@ public class magic_math
     static void sair(){
         
         System.err.println("Saindo do jogo...");
+        System.exit(0);
+        
         
     }
     
@@ -794,20 +796,510 @@ public class magic_math
     }
     
     static int desafio7(int pontuacao){
-        int coracao = 3;
-        int dadosVida;
+        Scanner entrar = new Scanner(System.in);
+        byte opcao;
+        int coracaoCont = 3;
+        int dadosVida, opcaoVida, dado = 1;
         Random aleatorio = new Random();
         dadosVida = aleatorio.nextInt(6) + 1;
+        
+        System.out.println("");
+        System.out.println("╔════•ೋೋ•════╗ \n" +
+                           "   7º Desafio Final 1/3\n" +
+                           "╚════•ೋೋ•════╝");
+        System.out.println(""); 
+        System.out.println("Dado está equação 13x-23-45=-7x+12, qual a sua respectiva resposta?");
+        
+        do{
+                                    
+                                    System.out.println("[1]- 2");
+                                    System.out.println("[2]- 4");
+                                    System.out.println("[3]- 5");
+                                    System.out.println("[4]- 1");
+                                    opcao = entrar.nextByte();
+                                    
+                                    switch(opcao){
+                                        case 1:
+                                           System.out.println("Você errou, tente novamente!");
+                                           coracaoCont--;
+                                           pontuacao = pontuacao - 15;
+                                           System.err.println("Pontuação: " +pontuacao);
+                                           System.out.println("Coração " +coracaoCont+ " / 3");
+                                           if(coracaoCont == 0){
+                                                System.out.println("");
+                                                System.err.println("Suas vidas acabaram!");
+                                                System.out.println("");
+                                                if(dado == 1){
+                                                do{
+                                                System.out.println("Aperte [1] para usar o item Dado da vida,caso o numero for maior que 4 você ganha mais um coração");
+                                                opcaoVida = entrar.nextInt();
+                                                }while(opcaoVida != 1);
+                                                if(opcaoVida == 1 && dado == 1){
+                                                    if(dadosVida > 4){
+                                                        dado--;
+                                                        coracaoCont++;
+                                                        System.out.println("Parabéns você conseguiu mais uma vida!");    
+                                                    System.out.println("Coração " +coracaoCont+ " / 3");}
+                                                    else{
+                                                    System.out.println("");
+                                                    System.err.println("Suas vidas acabaram o valor do dado da vida foi menor do que 5, fim de jogo!");
+                                                    System.out.println("");
+                                                    main(null);
+                                                    break;}
+                                                }else{
+                                                    System.err.println("Suas vidas acabaram, fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                                }
+                                                else{
+                                                    System.err.println("Fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                            }
+                                           break;
+                                            
+                                        case 2:
+                                           System.out.println("Você Acertou parabens!");
+                                            pontuacao = pontuacao + 20;
+                                            System.err.println("Pontuação: " +pontuacao);
+                                            break;
+                                            
+                                        case 3:
+                                           System.out.println("Você errou, tente novamente!");
+                                           coracaoCont--;
+                                           pontuacao = pontuacao - 15;
+                                           System.err.println("Pontuação: " +pontuacao);
+                                           System.out.println("Coração " +coracaoCont+ " / 3");
+                                           if(coracaoCont == 0){
+                                                System.out.println("");
+                                                System.err.println("Suas vidas acabaram!");
+                                                System.out.println("");
+                                                if(dado == 1){
+                                                do{
+                                                System.out.println("Aperte [1] para usar o item Dado da vida,caso o numero for maior que 4 você ganha mais um coração");
+                                                opcaoVida = entrar.nextInt();
+                                                }while(opcaoVida != 1);
+                                                if(opcaoVida == 1 && dado == 1){
+                                                    if(dadosVida > 4){
+                                                        dado--;
+                                                        coracaoCont++;
+                                                        System.out.println("Parabéns você conseguiu mais uma vida!");    
+                                                    System.out.println("Coração " +coracaoCont+ " / 3");}
+                                                    else{
+                                                    System.out.println("");
+                                                    System.err.println("Suas vidas acabaram o valor do dado da vida foi menor do que 5, fim de jogo!");
+                                                    System.out.println("");
+                                                    main(null);
+                                                    break;}
+                                                }else{
+                                                    System.err.println("Suas vidas acabaram, fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                                }
+                                                else{
+                                                    System.err.println("Fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                            }
+                                           break;
+                                            
+                                        case 4:
+                                           System.out.println("Você errou, tente novamente!");
+                                           coracaoCont--;
+                                           pontuacao = pontuacao - 15;
+                                           System.err.println("Pontuação: " +pontuacao);
+                                           System.out.println("Coração " +coracaoCont+ " / 3");
+                                           if(coracaoCont == 0){
+                                                System.out.println("");
+                                                System.err.println("Suas vidas acabaram!");
+                                                System.out.println("");
+                                                if(dado == 1){
+                                                do{
+                                                System.out.println("Aperte [1] para usar o item Dado da vida,caso o numero for maior que 4 você ganha mais um coração");
+                                                opcaoVida = entrar.nextInt();
+                                                }while(opcaoVida != 1);
+                                                if(opcaoVida == 1 && dado == 1){
+                                                    if(dadosVida > 4){
+                                                        dado--;
+                                                        coracaoCont++;
+                                                        System.out.println("Parabéns você conseguiu mais uma vida!");    
+                                                    System.out.println("Coração " +coracaoCont+ " / 3");}
+                                                    else{
+                                                    System.out.println("");
+                                                    System.err.println("Suas vidas acabaram o valor do dado da vida foi menor do que 5, fim de jogo!");
+                                                    System.out.println("");
+                                                    main(null);
+                                                    break;}
+                                                }else{
+                                                    System.err.println("Suas vidas acabaram, fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                                }
+                                                else{
+                                                    System.err.println("Fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                            }
+                                           break;
+                                           
+                                        
+                                        default:
+                                            System.out.println("Opção invalida!");
+                                            break;
+                                    }//FIM SWITCH DESAFIO
+
+                            
+                                    }while(opcao != 2);
+        
+        
+        System.out.println("");
+        System.out.println("╔════•ೋೋ•════╗ \n" +
+                           "   7º Desafio Final 2/3\n" +
+                           "╚════•ೋೋ•════╝");
+        System.out.println(""); 
+        System.out.println("Dado está equação 4x²-x+1=x+3x² , qual a sua respectiva resposta?");
+        
+        do{
+                                    
+                                    System.out.println("[1]- 2");
+                                    System.out.println("[2]- 0");
+                                    System.out.println("[3]- 3");
+                                    System.out.println("[4]- 1");
+                                    opcao = entrar.nextByte();
+                                    
+                                    switch(opcao){
+                                        case 1:
+                                           System.out.println("Você errou, tente novamente!");
+                                           coracaoCont--;
+                                           pontuacao = pontuacao - 15;
+                                           System.err.println("Pontuação: " +pontuacao);
+                                           System.out.println("Coração " +coracaoCont+ " / 3");
+                                           if(coracaoCont == 0){
+                                                System.out.println("");
+                                                System.err.println("Suas vidas acabaram!");
+                                                System.out.println("");
+                                                if(dado == 1){
+                                                do{
+                                                System.out.println("Aperte [1] para usar o item Dado da vida,caso o numero for maior que 4 você ganha mais um coração");
+                                                opcaoVida = entrar.nextInt();
+                                                }while(opcaoVida != 1);
+                                                if(opcaoVida == 1 && dado == 1){
+                                                    if(dadosVida > 4){
+                                                        dado--;
+                                                        coracaoCont++;
+                                                        System.out.println("Parabéns você conseguiu mais uma vida!");    
+                                                    System.out.println("Coração " +coracaoCont+ " / 3");}
+                                                    else{
+                                                    System.out.println("");
+                                                    System.err.println("Suas vidas acabaram o valor do dado da vida foi menor do que 5, fim de jogo!");
+                                                    System.out.println("");
+                                                    main(null);
+                                                    break;}
+                                                }else{
+                                                    System.err.println("Suas vidas acabaram, fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                                }
+                                                else{
+                                                    System.err.println("Fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                            }
+                                           break;
+                                            
+                                        case 2:
+                                           System.out.println("Você errou, tente novamente!");
+                                           coracaoCont--;
+                                           pontuacao = pontuacao - 15;
+                                           System.err.println("Pontuação: " +pontuacao);
+                                           System.out.println("Coração " +coracaoCont+ " / 3");
+                                           if(coracaoCont == 0){
+                                                System.out.println("");
+                                                System.err.println("Suas vidas acabaram!");
+                                                System.out.println("");
+                                                if(dado == 1){
+                                                do{
+                                                System.out.println("Aperte [1] para usar o item Dado da vida,caso o numero for maior que 4 você ganha mais um coração");
+                                                opcaoVida = entrar.nextInt();
+                                                }while(opcaoVida != 1);
+                                                if(opcaoVida == 1 && dado == 1){
+                                                    if(dadosVida > 4){
+                                                        dado--;
+                                                        coracaoCont++;
+                                                        System.out.println("Parabéns você conseguiu mais uma vida!");    
+                                                    System.out.println("Coração " +coracaoCont+ " / 3");}
+                                                    else{
+                                                    System.out.println("");
+                                                    System.err.println("Suas vidas acabaram o valor do dado da vida foi menor do que 5, fim de jogo!");
+                                                    System.out.println("");
+                                                    main(null);
+                                                    break;}
+                                                }else{
+                                                    System.err.println("Suas vidas acabaram, fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                                }
+                                                else{
+                                                    System.err.println("Fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                            }
+                                           break;
+                                            
+                                        case 3:
+                                           System.out.println("Você errou, tente novamente!");
+                                           coracaoCont--;
+                                           pontuacao = pontuacao - 15;
+                                           System.err.println("Pontuação: " +pontuacao);
+                                           System.out.println("Coração " +coracaoCont+ " / 3");
+                                           if(coracaoCont == 0){
+                                                System.out.println("");
+                                                System.err.println("Suas vidas acabaram!");
+                                                System.out.println("");
+                                                if(dado == 1){
+                                                do{
+                                                System.out.println("Aperte [1] para usar o item Dado da vida,caso o numero for maior que 4 você ganha mais um coração");
+                                                opcaoVida = entrar.nextInt();
+                                                }while(opcaoVida != 1);
+                                                if(opcaoVida == 1 && dado == 1){
+                                                    if(dadosVida > 4){
+                                                        dado--;
+                                                        coracaoCont++;
+                                                        System.out.println("Parabéns você conseguiu mais uma vida!");    
+                                                    System.out.println("Coração " +coracaoCont+ " / 3");}
+                                                    else{
+                                                    System.out.println("");
+                                                    System.err.println("Suas vidas acabaram o valor do dado da vida foi menor do que 5, fim de jogo!");
+                                                    System.out.println("");
+                                                    main(null);
+                                                    break;}
+                                                }else{
+                                                    System.err.println("Suas vidas acabaram, fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                                }
+                                                else{
+                                                    System.err.println("Fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                            }
+                                           break;
+                                            
+                                        case 4:
+                                           System.out.println("Você Acertou parabens!");
+                                            pontuacao = pontuacao + 25;
+                                            System.err.println("Pontuação: " +pontuacao);
+                                            break; 
+                                           
+                                        
+                                        default:
+                                            System.out.println("Opção invalida!");
+                                            break;
+                                    }//FIM SWITCH DESAFIO
+
+                            
+                                    }while(opcao != 4);
+        
+        
+        
+        System.out.println("");
+        System.out.println("╔════•ೋೋ•════╗ \n" +
+                           "   7º Desafio Final 3/3\n" +
+                           "╚════•ೋೋ•════╝");
+        System.out.println(""); 
+        System.out.println("Dado está equação 3x²+5x=-x–9+2x , qual a sua respectiva resposta?");
+        
+        do{
+                                    
+                                    System.out.println("[1]- -1 e 0");
+                                    System.out.println("[2]- 3");
+                                    System.out.println("[3]- -3");
+                                    System.out.println("[4]- 2 e -1");
+                                    opcao = entrar.nextByte();
+                                    
+                                    switch(opcao){
+                                        case 1:
+                                           System.out.println("Você errou, tente novamente!");
+                                           coracaoCont--;
+                                           pontuacao = pontuacao - 20;
+                                           System.err.println("Pontuação: " +pontuacao);
+                                           System.out.println("Coração " +coracaoCont+ " / 3");
+                                           if(coracaoCont == 0){
+                                                System.out.println("");
+                                                System.err.println("Suas vidas acabaram!");
+                                                System.out.println("");
+                                                if(dado == 1){
+                                                do{
+                                                System.out.println("Aperte [1] para usar o item Dado da vida,caso o numero for maior que 4 você ganha mais um coração");
+                                                opcaoVida = entrar.nextInt();
+                                                }while(opcaoVida != 1);
+                                                if(opcaoVida == 1 && dado == 1){
+                                                    if(dadosVida > 4){
+                                                        dado--;
+                                                        coracaoCont++;
+                                                        System.out.println("Parabéns você conseguiu mais uma vida!");    
+                                                    System.out.println("Coração " +coracaoCont+ " / 3");}
+                                                    else{
+                                                    System.out.println("");
+                                                    System.err.println("Suas vidas acabaram o valor do dado da vida foi menor do que 5, fim de jogo!");
+                                                    System.out.println("");
+                                                    main(null);
+                                                    break;}
+                                                }else{
+                                                    System.err.println("Suas vidas acabaram, fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                                }
+                                                else{
+                                                    System.err.println("Fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                            }
+                                           break;
+                                            
+                                        case 2:
+                                           System.out.println("Você errou, tente novamente!");
+                                           coracaoCont--;
+                                           pontuacao = pontuacao - 20;
+                                           System.err.println("Pontuação: " +pontuacao);
+                                           System.out.println("Coração " +coracaoCont+ " / 3");
+                                           if(coracaoCont == 0){
+                                                System.out.println("");
+                                                System.err.println("Suas vidas acabaram!");
+                                                System.out.println("");
+                                                if(dado == 1){
+                                                do{
+                                                System.out.println("Aperte [1] para usar o item Dado da vida,caso o numero for maior que 4 você ganha mais um coração");
+                                                opcaoVida = entrar.nextInt();
+                                                }while(opcaoVida != 1);
+                                                if(opcaoVida == 1 && dado == 1){
+                                                    if(dadosVida > 4){
+                                                        dado--;
+                                                        coracaoCont++;
+                                                        System.out.println("Parabéns você conseguiu mais uma vida!");    
+                                                    System.out.println("Coração " +coracaoCont+ " / 3");}
+                                                    else{
+                                                    System.out.println("");
+                                                    System.err.println("Suas vidas acabaram o valor do dado da vida foi menor do que 5, fim de jogo!");
+                                                    System.out.println("");
+                                                    main(null);
+                                                    break;}
+                                                }else{
+                                                    System.err.println("Suas vidas acabaram, fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                                }
+                                                else{
+                                                    System.err.println("Fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                            }
+                                           break;
+                                            
+                                        case 3:
+                                           System.out.println("Você Acertou parabens!");
+                                            pontuacao = pontuacao + 30;
+                                            System.err.println("Pontuação: " +pontuacao);
+                                            break;
+                                            
+                                        case 4:
+                                           System.out.println("Você errou, tente novamente!");
+                                           coracaoCont--;
+                                           pontuacao = pontuacao - 20;
+                                           System.err.println("Pontuação: " +pontuacao);
+                                           System.out.println("Coração " +coracaoCont+ " / 3");
+                                           if(coracaoCont == 0){
+                                                System.out.println("");
+                                                System.err.println("Suas vidas acabaram!");
+                                                System.out.println("");
+                                                if(dado == 1){
+                                                do{
+                                                System.out.println("Aperte [1] para usar o item Dado da vida,caso o numero for maior que 4 você ganha mais um coração");
+                                                opcaoVida = entrar.nextInt();
+                                                }while(opcaoVida != 1);
+                                                if(opcaoVida == 1 && dado == 1){
+                                                    if(dadosVida > 4){
+                                                        dado--;
+                                                        coracaoCont++;
+                                                        System.out.println("Parabéns você conseguiu mais uma vida!");    
+                                                    System.out.println("Coração " +coracaoCont+ " / 3");}
+                                                    else{
+                                                    System.out.println("");
+                                                    System.err.println("Suas vidas acabaram o valor do dado da vida foi menor do que 5, fim de jogo!");
+                                                    System.out.println("");
+                                                    main(null);
+                                                    break;}
+                                                }else{
+                                                    System.err.println("Suas vidas acabaram, fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                                }
+                                                else{
+                                                    System.err.println("Fim de jogo!");
+                                                    main(null);
+                                                    break;}
+                                            }
+                                           break;
+                                           
+                                        
+                                        default:
+                                            System.out.println("Opção invalida!");
+                                            break;
+                                    }//FIM SWITCH DESAFIO
+
+                            
+                                    }while(opcao != 3);
+        
+        
+        
         return pontuacao;
     }
     
     static void fimJogo(int pontuacao, String nome){
         System.out.println("");
-        System.out.println("Parabéns "+nome+", você conseguiu finalizar a sua jornada, graças a você o reino de Eldia foi salvo, porém isso é só o começo...");
+        System.out.println(" ______________     _             _,-----------._        ___\n" +
+"|              |   (_,.-      _,-'_,-----------._`-._    _)_)\n" +
+"|              |      |     ,'_,-'  ___________  `-._`.\n" +
+"|      \\     \\ |     `'   ,','  _,-'___________`-._  `.`.\n" +
+"|    \\    \\    |        ,','  ,'_,-'     .     `-._`.  `.`.\n" +
+"|              |       /,'  ,','        >|<        `.`.  `.\\\n" +
+"|              |      //  ,','      ><  ,^.  ><      `.`.  \\\\\n" +
+"|      \\       |     //  /,'      ><   / | \\   ><      `.\\  \\\\\n" +
+"|   \\    \\     |    //  //      ><    \\/\\^/\\/    ><      \\\\  \\\\\n" +
+"|______________|   ;;  ;;              `---'              ::  ::\n" +
+"                   ||  ||              (____              ||  ||\n" +
+"                  _||__||_            ,'----.            _||__||_\n" +
+"                 (o.____.o)____        `---'        ____(o.____.o)\n" +
+"                   |    | /,--.)                   (,--.\\ |    |\n" +
+"                   |    |((  -`___               ___`   ))|    |\n" +
+"                   |    | \\\\,'',  `.           .'  .``.// |    |\n" +
+"                   |    |  // (___,'.         .'.___) \\\\  |    |\n" +
+"                  /|    | ;;))  ____) .     . (____  ((\\\\ |    |\\\n" +
+"                  \\|.__ | ||/ .'.--.\\/       `/,--.`. \\;: | __,|;\n" +
+"                   |`-,`;.| :/ /,'  `)-'   `-('  `.\\ \\: |.;',-'|\n" +
+"                   |   `..  ' / \\__.'         `.__/ \\ `  ,.'   |\n" +
+"                   |    |,\\  /,                     ,\\  /,|    |\n" +
+"                   |    ||: : )          .          ( : :||    |\n" +
+"                  /|    |:; |/  .      ./|\\,      ,  \\| :;|    |\\\n" +
+"                  \\|.__ |/  :  ,/-    <--:-->    ,\\.  ;  \\| __,|;\n" +
+"                   |`-.``:   `'/-.     '\\|/`     ,-\\`;   ;'',-'|\n" +
+"                   |   `..   ,' `'       '       `  `.   ,.'   |\n" +
+"                   |    ||  :                         :  ||    |\n" +
+"                   |    ||  |                         |  ||    |\n" +
+"                   |    ||  |                         |  ||    |\n" +
+"                   |    |'  |            _            |  `|    |\n" +
+"                   |    |   |          '|))           |   |    |\n" +
+"                   ;____:   `._        `'           _,'   ;____:\n" +
+"                  {______}     \\___________________/     {______}\n" +
+"                  |______|_______________________________|______|");
+        System.out.println("Parabéns "+nome+", você conseguiu finalizar a sua jornada, graças a você a localização do portal da cordenada foi descoberto o reino de Eldia foi salvo, porém isso é só o começo...");
         
         System.out.println("");
-        System.err.println("Sua pontuação foi de: "+pontuacao);
+        System.err.println("  Sua pontuação");
+        System.err.println("  foi de: "+pontuacao);
         System.out.println("");
+        
+        
     }
     
     static String historiaJogo_1(String nome){
@@ -1279,7 +1771,7 @@ public class magic_math
         }   
             
         System.out.println("");
-        System.out.println("Escolha sabiamente a sua porta, Porta[0], Porta[1], Porta[2]?");
+        System.out.println("Escolha sabiamente a sua porta, 1ºPorta[0], 2ºPorta[1], 3ºPorta[2]?");
         resposta = entrar.nextInt();
         
         if(vetor[valorAleatorio] == resposta){
@@ -1348,15 +1840,15 @@ public class magic_math
         
         System.out.println("Muito obrigado "+nome+", você me libertou de minha prisão de seculos e graças a você eu poderei ver a Deusa divina novamente ou como eu a conheço,\n"
                 + " Eldia a Deusa da vida, você ira encontrar o seu destino em breve, permita-me ajuda-lo irei te dar um item chamado dados da vida,\n"
-                + " caso você morra você podera rola-los e isso poderá te dar mais uma chance, salve o seu povo e cumpra o seu destino.");
+                + " caso você morra você podera rola-los e isso poderá te dar mais uma chance mas você só pode usar uma unica vez, salve o seu povo e cumpra o seu destino.");
         System.out.println("");
     }
     
     static void historiaJogo_9(String nome){
         
         System.out.println("");
-        System.out.println("Após "+nome+" conseguir as cordenadas finais na torre e obter o item 'Dados da vida' ele se dirige para o local final de sua jornada, "
-                + "porém ali ele já começava a sentir um grande mal, ele sabia que algo estava por vir e sentia cade vez mais isso chegando perto");
+        System.out.println("Após "+nome+" conseguir as cordenadas finais na torre e obter o item 'Dados da vida' ele se dirige para o local final de sua jornada, \n"
+                + "porém ali ele já começava a sentir um grande mal, ele sabia que algo estava por vir e sentia cada vez mais isso chegando perto");
         System.out.println("");
         System.out.println("...............");
         System.out.println("");
