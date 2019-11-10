@@ -26,6 +26,7 @@ public class magic_math
         int opcao; // VARIAVEL QUE IR CAPTURAR A OPÇÃO DO JOGADOR RELACIONADA AO MENU
         int corpoFuncao;
         
+        System.out.println("");
         System.out.println("                           ╔════•ೋೋ•════╗ \n" +
                            "                                     Magic Math\n" +
                            "                           ╚════•ೋೋ•════╝");
@@ -141,16 +142,16 @@ public class magic_math
         
         
        nomeFunc = historiaJogo_1(nome);
-       nomeFunc = historiaJogo_2(nomeFunc);
+       historiaJogo_2(nomeFunc);
        pontuacaoFunc = desafio1(pontuacao);
        historiaJogo_3();
        pontuacaoFunc = desafio2(pontuacaoFunc);
        pontuacaoFunc = desafio3(pontuacaoFunc);
        pontuacaoFunc = desafio4(pontuacaoFunc);
-       nomeFunc = historiaJogo_4(nomeFunc);
-       nomeFunc = historiaJogo_5(nomeFunc);
+       historiaJogo_4(nomeFunc);
+       historiaJogo_5(nomeFunc);
        pontuacaoFunc = desafio5(pontuacaoFunc);
-       nomeFunc = historiaJogo_6(nomeFunc);
+       historiaJogo_6(nomeFunc);
        historiaJogo_7();
        pontuacaoFunc = desafio6(pontuacaoFunc);
        historiaJogo_8(nomeFunc);
@@ -1358,7 +1359,7 @@ public class magic_math
         return nomePersonagem;
     }
     
-    static String historiaJogo_2(String nome){
+    static void historiaJogo_2(String nome){
         
         System.out.println("                                   ....\n" +
 "                                .'' .'''\n" +
@@ -1436,7 +1437,7 @@ public class magic_math
                     
                     System.out.println("");
                     
-       return nome;             
+                   
     } 
     
     static void historiaJogo_3(){
@@ -1501,7 +1502,7 @@ public class magic_math
                             
     }
     
-    static String historiaJogo_4(String nome){
+    static void historiaJogo_4(String nome){
         
         
         System.out.println("");
@@ -1547,10 +1548,10 @@ public class magic_math
             System.out.println("");
             
             
-            return nome;
+            
     }
     
-    static String historiaJogo_5(String nome){
+    static void historiaJogo_5(String nome){
         
         System.out.println("(Chegando ao norte " +nome+ " finalmente chega ao grande castelo das ruínas perdidas,"
                     + " um castelo de um antigo rei louco que deixou um grande segredo em sua torre principal,"
@@ -1654,10 +1655,10 @@ public class magic_math
 "                                                                   []'\"'                         '\"'[]             \\)()\\),()_\n" +
 "                                                                     \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"    ");
         
-        return nome;
+        
     }
     
-    static String historiaJogo_6(String nome){
+    static void historiaJogo_6(String nome){
         System.out.println("");
         System.out.println("");
                             System.out.println("Deusa divina: ");
@@ -1700,7 +1701,7 @@ public class magic_math
             System.out.println("Olá " +nome+ " a partir daqui eu não vou mais poder te acompanhar e tudo dependera apenas de você,"
                     + " dentro deste castelo encontra-se a cordenada para salvar o nosso reino, que a benção dos deuses caia sobre você)");
             
-            return nome;
+            
     }
     
     static void historiaJogo_7(){
