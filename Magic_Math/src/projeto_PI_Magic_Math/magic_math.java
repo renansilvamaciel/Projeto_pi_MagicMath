@@ -1734,7 +1734,7 @@ public class magic_math
     int vetor[] = {0, 0, 0};
     Random aleatorio = new Random();
     
-    
+       
     
     
         System.out.println("");
@@ -1793,6 +1793,8 @@ public class magic_math
         int valorAleatorio = aleatorio.nextInt(3);    
         for(int i = 0; i < vetor.length; i++){
         vetor[i] = valorAleatorio;
+        
+            System.out.println("radom: "+valorAleatorio);
         }   
             
         System.out.println("");
@@ -1825,7 +1827,7 @@ public class magic_math
     
     static void historiaJogo_8(String nome){
         
-        System.out.println("Morte: ");
+        System.out.println(" ");
         System.out.println("                                    .\"\"--..__\n" +
 "                     _                     []       ``-.._\n" +
 "                  .'` `'.                  ||__           `-._\n" +
@@ -1863,7 +1865,7 @@ public class magic_math
 "`-.___,-.      .-.        ___,'        (/    \n" +
 "         `---'`   `'----'`");
         
-        System.out.println("Muito obrigado "+nome+", você me libertou de minha prisão de seculos e graças a você eu poderei ver a Deusa divina novamente ou como eu a conheço,\n"
+        System.out.println("Morte: Muito obrigado "+nome+", você me libertou de minha prisão de seculos e graças a você eu poderei ver a Deusa divina novamente ou como eu a conheço,\n"
                 + " Eldia a Deusa da vida, você ira encontrar o seu destino em breve, permita-me ajuda-lo irei te dar um item chamado dados da vida,\n"
                 + " caso você morra você podera rola-los e isso poderá te dar mais uma chance mas você só pode usar uma unica vez, salve o seu povo e cumpra o seu destino.");
         System.out.println("");
@@ -1879,7 +1881,7 @@ public class magic_math
         System.out.println("");
         System.out.println("..................................");
         System.out.println("");
-        System.out.println("Sauron o destruidor, Rei da nação de Marven: ");
+        System.out.println("Sauron, o destruidor. Rei da nação de Marven: ");
         System.out.println("          _\n" +
 "                              ==(W{==========-      /===-\n" +
 "                                ||  (.--.)         /===-_---~~~~~~~----__\n" +
