@@ -1765,7 +1765,7 @@ public class magic_math
         
         
         do{
-        int valorAleatorio = aleatorio.nextInt(2);    
+        int valorAleatorio = aleatorio.nextInt(3);    
         for(int i = 0; i < vetor.length; i++){
         vetor[i] = valorAleatorio;
         }   
