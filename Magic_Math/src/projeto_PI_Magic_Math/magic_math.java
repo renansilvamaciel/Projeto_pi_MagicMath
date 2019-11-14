@@ -163,10 +163,21 @@ public class magic_math
     }
     
     static void historia(){
+        byte his = 0;
+        Scanner voltar = new Scanner(System.in);
+        do{
         System.out.println("");
         System.out.println("╔════•ೋೋ•════╗ \n" +
                            "     Historia do Jogo\n" +
                            "╚════•ೋೋ•════╝");
+        
+            
+        
+        System.out.println("Digite [1] Para voltar ao menu inicial: ");
+        his = voltar.nextByte();
+        
+        }while(his != 1);
+        main(null);
     }
     
     static void creditos(){
