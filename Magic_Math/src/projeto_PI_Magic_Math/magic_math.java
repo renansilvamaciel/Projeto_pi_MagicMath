@@ -24,7 +24,7 @@ public class magic_math
         
         Scanner entrar = new Scanner(System.in);
         int opcao; // VARIAVEL QUE IR CAPTURAR A OPÇÃO DO JOGADOR RELACIONADA AO MENU
-        int corpoFuncao;
+        
         
         System.out.println("");
         System.out.println("                           ╔════•ೋೋ•════╗ \n" +
@@ -101,13 +101,15 @@ public class magic_math
             
             
        opcao = entrar.nextInt(); // capturando dados
-       corpoFuncao = opcaoMenu(opcao);
+       opcaoMenu(opcao); //PASSANDO O PARAMETRO DA VARIAVEL A CIMA PARA A FUNÇÃO DAS OPÇÕES DO MENU
         
         
     }
     
-    static int opcaoMenu(int opcoesMenu){
-        
+    static void opcaoMenu(int opcoesMenu){
+        /*A PARTIR DO NUMERO DIGITADO ESSA FUNÇÃO RECEBE ELE POR PARAMETRO E A PARTIR DISSO CAI EM UM DOS CASOS QUE SERÁ AVALIADO PELO SISTEMA DE DECISÃO SWITCH CHAMANDO
+        A SUA RESPECTIVA FUNÇÃO
+        */
         
         switch(opcoesMenu){
             case 1:
@@ -131,19 +133,20 @@ public class magic_math
                 
         }
         
-        return opcoesMenu;
+        
     }
     
     //OPÇÃO MENU
     
     static void jogar(){
-       String nome = null, nomeFunc;
-       int pontuacao = 0, pontuacaoFunc;
+       String nome = null, nomeFunc; // VARIAVEIS CRIADAS PARA CAPTURAR O NOME E PASSAR POR PARAMETRO
+       int pontuacao = 0, pontuacaoFunc; // VARIAVEIS CRIADAS PARA A PONTUAÇÃO DO JOGO PASSANDO ELA ENTRE PARAMETRO PARA OS DESAFIOS
         
-        
-       nomeFunc = historiaJogo_1(nome);
+        //AQUI BASICAMENTE É O CORPO PRINCIPAL DE NOSSO PROGRAMA ONDE TUDO É DADO OU CHAMADO POR FUNÇÃO A FIM DE OTIMIZAR E FACILITAR A MANUTENÇÃO DO CODIGO
+       
+       nomeFunc = historiaJogo_1(nome); // CAPTURANDO O NOME E RETORNANDO O MESMO PARA UMA VARIAVEL
        historiaJogo_2(nomeFunc);
-       pontuacaoFunc = desafio1(pontuacao);
+       pontuacaoFunc = desafio1(pontuacao); // PASSANDO A VARIAVEL DA PONTUAÇAO POR PARAMETRO E DEPOIS RECEBENDO A ATUAL PONTUAÇÃO EM UMA VARIAVEL QUE VAI SER ULTIZADA NOS DEMAIS DESAFIOS
        historiaJogo_3();
        pontuacaoFunc = desafio2(pontuacaoFunc);
        pontuacaoFunc = desafio3(pontuacaoFunc);
@@ -163,6 +166,7 @@ public class magic_math
     }
     
     static void historia(){
+        // MENU DE HISTORIA A FIM DA PESSOA CONHECER O ENREDO MELHOR E FACILITAR O ENTENDIMENTO
         byte his = 0;
         Scanner voltar = new Scanner(System.in);
         do{
@@ -181,6 +185,7 @@ public class magic_math
     }
     
     static void creditos(){
+        // MENU DE CREDITOS A FIM DE SABER SOBRE OS DESENVOLVEDORES DO PROJETO E A DISCIPLINA
         byte credi = 0;
         Scanner voltar = new Scanner(System.in);
         
@@ -192,6 +197,7 @@ public class magic_math
         System.out.println(""); 
         
                 System.out.println("Trabalho Projeto Integrador (P.I)");
+                System.out.println("Campus Universitario Senac Santo Amaro");
                 System.out.println("Turma 1ºA TADS - Noturno, 1º Semestre, 2019");
                 System.out.println("Desenvolvido por Marcos vinicius Santos Souza, Renan Maciel, Matheus Caetano");
                 System.out.println("");
@@ -203,7 +209,7 @@ public class magic_math
     }
     
     static void sair(){
-        
+        // OPÇÃO PARA SAIR DO JOGO E FINALIZAR A EXCUÇÃO DO PROGRAMA
         System.err.println("Saindo do jogo...");
         System.exit(0);
         
@@ -211,7 +217,8 @@ public class magic_math
     }
     
     static int desafio1(int pontuacao){
-        byte opcao;
+        // PRIMEIRO DESAFIO USANDO SISTEMA SWITCH PARA COMPARAR AS RESPOSTAS E UM LAÇO DE REPETIÇÃO DO WHILE PARA SE REPETIR ATÉ O JOGADOR ACERTAR
+        byte opcao;//VARIAVEL CRIADA PARA CAPTURAR A RESPOSTA DO USUARIO
         Scanner entrar = new Scanner(System.in);
         System.out.println("╔════•ೋೋ•════╗ \n" +
                            "       1º Desafio\n" +
@@ -257,11 +264,12 @@ public class magic_math
                     }
                     }while(opcao != 3); // fim do looping DO WHILE
         
-       return pontuacao;
+       return pontuacao; // RETORNANDO O VALOR DA VARIAVEL DE PONTUAÇÃO PARA O METODO "JOGAR" 
     }
     
     static int desafio2(int pontuacao){
-        byte opcao;
+        // SEGUNDO DESAFIO USANDO SISTEMA SWITCH PARA COMPARAR AS RESPOSTAS E UM LAÇO DE REPETIÇÃO DO WHILE PARA SE REPETIR ATÉ O JOGADOR ACERTAR
+        byte opcao;//VARIAVEL CRIADA PARA CAPTURAR A RESPOSTA DO USUARIO
         Scanner entrar = new Scanner(System.in);
         
         System.out.println("( finalmente agora dentro das ruinas o héroi se depara com um lago vermelho como sangue\n" +
@@ -334,10 +342,11 @@ public class magic_math
                                     }//FIM SWITCH DESAFIO 2
                                     }while(opcao != 2); 
         
-        return pontuacao;
+        return pontuacao;// RETORNANDO O VALOR DA VARIAVEL DE PONTUAÇÃO PARA O METODO "JOGAR"
     }
     
     static int desafio3(int pontuacao){
+        // AQUI USAMOS O MESMO SISTEMA DOS DOIS DESAFIOS ACIMA APENAS SEM O LAÇO DO WHILE
         byte opcao;
         Scanner entrar = new Scanner(System.in);
         
@@ -422,7 +431,8 @@ public class magic_math
     }
     
     static int desafio4(int pontuacao){
-    byte opcao, coracaoCont = 3;
+    byte opcao, coracaoCont = 3; // VARIAVEL DE CORAÇÃO CRIADA PARA CONTAR A VIDA DO USUARIO, SE CHRGAR A ZERO ELE PERDE
+    // USAMOS O MESMO SISTEMA A CIMA, TANTO SWITCH QUANTO DO WHILE PORÉM ADICIONAMOS UM IF DENTRO DE CADA CASE PARA MEDIR A VIDA A MEDIDA QUE O USUARIO ERRA AS QUESTÕES
     
     
      Scanner entrar = new Scanner(System.in);   
@@ -561,7 +571,7 @@ public class magic_math
     }
     
     static int desafio5(int pontuacao){
-        
+        // CONTINUAMOS COM O MESMO SISTEMA DO DESAFIO A CIMA USANDO SWITCH, DO-WHILE E IF
          byte opcao, coracaoCont = 3;
     
     
@@ -662,6 +672,7 @@ public class magic_math
     }
     
     static int desafio6(int pontuacao){
+        // CONTINUAMOS COM O MESMO SISTEMA DO DESAFIO A CIMA USANDO SWITCH, DO-WHILE E IF
         byte opcao, coracaoCont = 3;
         Scanner entrar = new Scanner(System.in);
         
@@ -808,12 +819,14 @@ public class magic_math
     }
     
     static int desafio7(int pontuacao){
+        // COMO ESTE É O ULTIMO DESAFIO OS CASES SÃO MAIORES, AQUI ENTRA UM ITEM NOVO QUE FOI OBTIDO COM O DECORRER DA HISTORIA E SÓ PODE SER USADO UMA VEZ DURANTE TODO O JOGO
+        // ENTÃO ALÉM DE VALIDAR A RESPOSTA DO USUARIO COM IF TAMBEM VALIDAMOS SE ELE JA USOU OU NÃO ESTE ITEM
         Scanner entrar = new Scanner(System.in);
         byte opcao;
         int coracaoCont = 3;
-        int dadosVida, opcaoVida, dado = 1;
-        Random aleatorio = new Random();
-        dadosVida = aleatorio.nextInt(6) + 1;
+        int dadosVida, opcaoVida, dado = 1; // VARIAVEIS RELACIONADAS PARA CONTROLAR O USO DESTE ITEM DO JOGO
+        Random aleatorio = new Random(); // CRIADO PARA RANDOMIZAR O ITEM A BAIXO
+        dadosVida = aleatorio.nextInt(6) + 1; // CRIADO COMO UM DADO PARA O USUARIO PODER JOGAR DURANTE UMA UNICA VEZ NA PARTIDA CASO PERCA AS 3 VIDAS
         
         System.out.println("");
         System.out.println("╔════•ೋೋ•════╗ \n" +
