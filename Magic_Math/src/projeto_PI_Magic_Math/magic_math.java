@@ -174,7 +174,18 @@ public class magic_math
         System.out.println("╔════•ೋೋ•════╗ \n" +
                            "     Historia do Jogo\n" +
                            "╚════•ೋೋ•════╝");
-        
+            System.out.println(" Assim como toda história tem um começo esta não seria diferente, a nossa história \n"
+                    + "se passa em algum século já perdido, em meio as ruinas do tempo em uma terra média \n"
+                    + "chamada Eldia, quando a magia e o irreal ainda coexistiam. \n"
+                    + "A partir deste ponto temos um jovem rapaz, que, em poucos dias começaria uma jornada que mudaria a sua vida.\n" +
+                      "\n" +
+                      "A vida neste século não é nada fácil, toda Eldia está destruída há séculos, a história \n"
+                    + "e todo o conhecimento contido em nosso mundo está escasso, a busca por uma \n"
+                    + "coordenada que levara até a verdade sobre o nosso mundo é constante, e no meio disto, a nação \n"
+                    + "soberana de Marvin quer impedir que alguém consiga obter tais conhecimentos, somente obtendo tais \n"
+                    + "informações (equações) poderá reconstruir o mundo novamente. O nosso herói enfrentará grandes \n"
+                    + "obstáculos, passará por lugares ermos, onde somente seus conhecimentos o guiarão. \n"
+                    + "Não será nada fácil utilize da matemática e conhecimento logico, para superar cada desafio, e, assim prosseguir.");
             
         
         System.out.println("Digite [1] Para voltar ao menu inicial: ");
@@ -273,8 +284,8 @@ public class magic_math
         byte opcao;//VARIAVEL CRIADA PARA CAPTURAR A RESPOSTA DO USUARIO
         Scanner entrar = new Scanner(System.in);
         
-        System.out.println("( finalmente agora dentro das ruinas o héroi se depara com um lago vermelho como sangue\n" +
-                                    "e na beira deste lago tem um barqueiro chamado Aqueronte e para atravessar este lago Aqueronte propoe o seguinte enigma ) ");
+        System.out.println("( Agora dentro das ruinas, o héroi se depara com um lago vermelho como sangue.\n" +
+                                    "E, na beira deste lago tem um barqueiro chamado Aqueronte, para atravessar este lago, Aqueronte propõe o seguinte enigma. ) ");
                                     System.out.println("                      `-.\n" +
 "              -._ `. `-.`-. `-.\n" +
 "             _._ `-._`.   .--.  `.\n" +
@@ -438,10 +449,10 @@ public class magic_math
     
      Scanner entrar = new Scanner(System.in);   
         
-        System.out.println("(Após o jovem heroi conseguir passar por este desafio ele se sente mais forte e confiante sobre o seu destino porém\n" +
-"como Nicolas disse a partir dali as coisas ficariam mais dificeis ou seja toda vez que errar ele terá 1/3 de sua vida drenada\n" +
-"durante aquele determinado teste,\n" +
-" finalmente no 4º desafio ele se depara com uma porta chamada porta da vida e para abrir está porta precisara responde-lá)");
+        System.out.println("(Após o nosso heroi conseguir passar por este desafio, ele se sente mais forte e confiante sobre o seu destino. Porém\n" +
+"como Nicolas disse, a partir dali as coisas ficariam mais dificeis. Toda vez que errar ele terá 1/3 de sua vida drenada\n" +
+"durante aquele determinado teste.\n" +
+" Finalmente no 4º desafio ele se depara com uma porta chamada porta da vida e para abrir está porta precisara responde-lá)");
         
         System.out.println("   ---   .    ____        -----      ______   -----        .\n" +
 "  ___     / \\             .....................      ____   / \\\n" +
@@ -677,9 +688,9 @@ public class magic_math
         byte opcao, coracaoCont = 3;
         Scanner entrar = new Scanner(System.in);
         
-        System.out.println("Finalmente o nosso héroi pode subir na torre principal, e ele de depara com um telescopio,\n"
-                + " o antigo rei amava olhar as estrelas, dizia que elas eram um sinal de luz e esperança,\n"
-                + " porém o nosso héroi não conseguia entender como onde está a pista para a cordenada final até que ele olhou no telescopio e percebeu um padrão nas estrelas.");
+        System.out.println("Finalmente o nosso héroi pode subir na torre principal, e ele de depara com um telescopio.\n"
+                + " O antigo rei amava olhar as estrelas, dizia que elas eram um sinal de luz e esperança,\n"
+                + " porém o nosso héroi não conseguia entender como onde está a pista para a cordenada final, até que ele olhou no telescopio e percebeu um padrão nas estrelas.");
         
         System.out.println("");
         System.out.print("            *          .\n" +
@@ -1423,13 +1434,13 @@ public class magic_math
                     
                     System.out.println(" olá, jovem " +nome+ ", eu sou o 13º mago celestial o ultimo de todos, seu pai foi um grande mago e um excelente matematico,\n" +
 " amigo e professor enconfiou a mim a missão de guia-lo em seu destino. "
-+ "Sua jornada se passara nas ruínas do mundo desconhecido,\n" +
-" onde caso você consiga passar pelos 10 desafios divinos, você obterá o conhecimento supremo para enfim restaurar o nosso mundo,\n" +
-" o povo de Eldia conta com você. Salve o mundo e construa o seu destino...");    
++ "Sua jornada se passara nas ruínas de um mundo desconhecido,\n" +
+" onde, caso você consiga passar pelos 10 desafios divinos, você obterá o conhecimento supremo para enfim, restaurar o nosso mundo.\n" +
+" O povo de Eldia conta com você, salve o mundo e construa o seu destino...");    
                     
                     System.out.println("");
                     System.out.println("chegando nas ruinas do mundo desconhecido, o jovem se depara com o 1º problema.\n" +
-" para ele entrar dentro das ruínas ele terá que resolver o enigma de raciocinio");        
+" para ele entrar dentro das ruínas ele terá que resolver o enigma de raciocinio logico");        
               
                     
                     System.out.println("  |||            _.'   _      _.-. |        | |--\n" +
@@ -1476,8 +1487,8 @@ public class magic_math
         int opcao;
         
         System.out.println("");
-                            System.out.println("Deusa divina: ");
-                            System.out.println("");
+                            System.out.println(" ");
+                           
                             System.out.println(""+ "          .;;;,.,\n" +
 "         ;sXs=SV2;\n" +
 "        ;;Y; _ ^_;\n" +
@@ -1513,7 +1524,7 @@ public class magic_math
 "  ,'_'/;  ',   ; \\ ( _L_.'-._'---,;\n" +
 " '-----L___;--.,__;-' --''-.'---'");
                             
-                            System.out.println("Parabens jovem aventureiro, porem este foi apenas o 1º teste, a partir daqui as coisas ficarão mais dificeis,\n" +
+                            System.out.println("Deusa divina: Parabens jovem aventureiro, porem este foi apenas o 1º teste, a partir daqui as coisas ficarão mais dificeis,\n" +
                             " muitos tentaram e nenhum até hoje conseguiu, se você não deseja perecer onde outros sucumbiram é a chance de voltar."
                                     + ""
                                     + "               você deseja continuar?");
@@ -1522,7 +1533,7 @@ public class magic_math
                                                "╚═══════•ೋೋ•═══════╝");
                             opcao = entrar.nextInt();
                             if(opcao == 1){
-                                System.out.println("A partir daqui não se pode mais desistir e a morte será certa, porém caso consiga você obterá algo de valor inestimavel...");
+                                System.out.println("A partir daqui, não se pode mais desistir e a morte será certa, porém caso consiga, você obterá algo de valor inestimavel...");
                             }else{
                                     System.out.println("");
                                     System.err.println("Voltando para casa, fim da jornada...");
@@ -1537,7 +1548,7 @@ public class magic_math
         // funcao criada apenas para escrever historia do jogo na tela por este motivo é uma funcao do tipo void.
         
         System.out.println("");
-                            System.out.println("Deusa divina: ");
+                            
                             System.out.println("");
                             System.out.println(""+ "          .;;;,.,\n" +
 "         ;sXs=SV2;\n" +
@@ -1574,8 +1585,8 @@ public class magic_math
 "  ,'_'/;  ',   ; \\ ( _L_.'-._'---,;\n" +
 " '-----L___;--.,__;-' --''-.'---'");
                             
-            System.out.println("Muito bem " +nome+ " porém sua jornada ainda está na metade, você deverá seguir ao norte,"
-                    + " lá estará um grande castelo e a partir dali você terá cordenadas cruciais para o fim de sua jornada");
+            System.out.println("Deusa divina: Muito bem " +nome+ " porém sua jornada ainda está na metade, você deverá seguir ao norte,"
+                    + " lá estará um grande castelo e a partir dali você terá cordenadas cruciais para o fim de sua jornada.");
             System.out.println("");
             
             
@@ -1584,9 +1595,9 @@ public class magic_math
     
     static void historiaJogo_5(String nome){
          // funcao criada apenas para escrever historia do jogo na tela por este motivo é uma funcao do tipo void.
-        System.out.println("(Chegando ao norte " +nome+ " finalmente chega ao grande castelo das ruínas perdidas,"
-                    + " um castelo de um antigo rei louco que deixou um grande segredo em sua torre principal,"
-                + " o héroi precisa-ra chegar até ela porém talvez não seja tão facil assim");
+        System.out.println("(Chegando ao norte " +nome+ ", finalmente se depara com grande castelo das ruínas perdidas,"
+                    + " um castelo de um antigo rei louco, que deixou um grande segredo em sua torre principal."
+                + " O héroi precisa chegar até ela, porém talvez não seja tão facil assim.");
         
         System.out.println("                                                                               .-,-}|\n" +
 "                                                                                   \"|\n" +
@@ -1693,7 +1704,6 @@ public class magic_math
          // funcao criada apenas para escrever historia do jogo na tela por este motivo é uma funcao do tipo void.
         System.out.println("");
         System.out.println("");
-                            System.out.println("Deusa divina: ");
                             System.out.println("");
                             System.out.println(""+ "          .;;;,.,\n" +
 "         ;sXs=SV2;\n" +
@@ -1730,7 +1740,7 @@ public class magic_math
 "  ,'_'/;  ',   ; \\ ( _L_.'-._'---,;\n" +
 " '-----L___;--.,__;-' --''-.'---'");
                             
-            System.out.println("Olá " +nome+ " a partir daqui eu não vou mais poder te acompanhar e tudo dependera apenas de você,"
+            System.out.println("Deusa divina: Olá " +nome+ " a partir daqui eu não vou mais poder te acompanhar e tudo dependera apenas de você,"
                     + " dentro deste castelo encontra-se a cordenada para salvar o nosso reino, que a benção dos deuses caia sobre você)");
             
             
@@ -1746,9 +1756,9 @@ public class magic_math
     
     
         System.out.println("");
-        System.out.println("Agora finalmente dentro do castelo o objetivo de nosso heroi está mais perto\n"
-                + " do que nunca porém a presença de um grande mal se aproximando tambem,\n"
-                + " o objetivo dele neste momento é chegar na torre principal mas o castelo é extremamente grande a ponto dele poder se perder dentro");
+        System.out.println("Agora finalmente dentro do castelo, o objetivo de nosso heroi está cada vez mais perto,\n"
+                + " porém a presença de um grande mal, se aproxima também.\n"
+                + " O objetivo dele neste momento é chegar na torre principal, mas o castelo é extremamente grande, a ponto dele poder se perder.");
         
         System.out.println("....................");
         
@@ -1833,7 +1843,7 @@ public class magic_math
     
     static void historiaJogo_8(String nome){
         // Funcao  criada apenas para escrver historia do jogo, por este motivo é uma funcao do tipo void.
-        System.out.println("Morte: ");
+        System.out.println(" ");
         System.out.println("                                    .\"\"--..__\n" +
 "                     _                     []       ``-.._\n" +
 "                  .'` `'.                  ||__           `-._\n" +
@@ -1871,7 +1881,7 @@ public class magic_math
 "`-.___,-.      .-.        ___,'        (/    \n" +
 "         `---'`   `'----'`");
         
-        System.out.println("Muito obrigado "+nome+", você me libertou de minha prisão de seculos e graças a você eu poderei ver a Deusa divina novamente ou como eu a conheço,\n"
+        System.out.println("Morte: Muito obrigado "+nome+", você me libertou de minha prisão de seculos e graças a você eu poderei ver a Deusa divina novamente ou como eu a conheço,\n"
                 + " Eldia a Deusa da vida, você ira encontrar o seu destino em breve, permita-me ajuda-lo irei te dar um item chamado dados da vida,\n"
                 + " caso você morra você podera rola-los e isso poderá te dar mais uma chance mas você só pode usar uma unica vez, salve o seu povo e cumpra o seu destino.");
         System.out.println("");
@@ -1881,7 +1891,7 @@ public class magic_math
         //Funcao apenas para printar historia do jogo na tela, por isso ela é do tipo void.
         System.out.println("");
         System.out.println("Após "+nome+" conseguir as cordenadas finais na torre e obter o item 'Dados da vida' ele se dirige para o local final de sua jornada, \n"
-                + "porém ali ele já começava a sentir um grande mal, ele sabia que algo estava por vir e sentia cada vez mais isso chegando perto");
+                + "porém ali ele já começava a sentir um grande mal, ele sabia que algo estava por vir e sentia cada vez mais intensa, a sensação de perigo eminente.");
         System.out.println("");
         System.out.println("...............");
         System.out.println("");
@@ -1918,7 +1928,7 @@ public class magic_math
 "     ;'( ')/ ,)(                              ~~~~~~~~\n" +
 "    ' ') '( (/");
         
-        System.out.println("Olá " +nome+ " muito obrigado por me levar a cordenada, eu estava te observando de longe a muito tempo,\n"
+        System.out.println("Sauron o destruidor: Olá " +nome+ " muito obrigado por me levar as cordenadas, eu estava te observando de longe a muito tempo,\n"
                 + " uma de minhas videntes profetizou a minha morte pelas mãos de um jovem héroi do reino de Eldia, porém não irei perder,"
                 + " você irá conhecer o despero e terror de verdade!");
         
