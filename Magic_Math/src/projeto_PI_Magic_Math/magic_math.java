@@ -215,7 +215,8 @@ public class magic_math
         
         
     }
-    
+     // Dividimos cada parte dos desafios do jogo em funcoes para facilitar o entendimento do codigo 
+    //e para facilitar caso encrontrassemos erro.
     static int desafio1(int pontuacao){
         // PRIMEIRO DESAFIO USANDO SISTEMA SWITCH PARA COMPARAR AS RESPOSTAS E UM LAÇO DE REPETIÇÃO DO WHILE PARA SE REPETIR ATÉ O JOGADOR ACERTAR
         byte opcao;//VARIAVEL CRIADA PARA CAPTURAR A RESPOSTA DO USUARIO
@@ -1326,9 +1327,11 @@ public class magic_math
         
         
     }
-    
+    // Dividimos cada parte da historia jogo em funcoes para facilitar o entendimento do codigo 
+    //e para facilitar em caso encrontrassemos erro.
     static String historiaJogo_1(String nome){
-        
+        // Funcao criada para printar historia do jogo e para que o usuario escolha se ele ira continuar realmente continuar ou nao a jogar
+       // Caso o usuario escolha a funcao para jogar ele ira fazer o usuario digitar o nome do respectivo para dar continuidade no jogo
         String nomePersonagem = nome;
         int opcao;
         Scanner entrar = new Scanner(System.in);
@@ -1384,7 +1387,7 @@ public class magic_math
     }
     
     static void historiaJogo_2(String nome){
-        
+        //Funcao criada para apenas escrever historia do jogo na Tela por isso o motivo dela ser uma void.
         System.out.println("                                   ....\n" +
 "                                .'' .'''\n" +
 ".                             .'   :\n" +
@@ -1465,6 +1468,10 @@ public class magic_math
     } 
     
     static void historiaJogo_3(){
+        // Funcao criada para printar historia na tela, porém no meio dela temos uma estrutura de controle, 
+        //pois deixamos claro ao usuario que a partir dali as coisas seriam mais dificeis, 
+        //e deixamos ele escolher se irá continuar a jogar ou nao.
+        
         Scanner entrar = new Scanner(System.in);
         int opcao;
         
@@ -1527,7 +1534,7 @@ public class magic_math
     }
     
     static void historiaJogo_4(String nome){
-        
+        // funcao criada apenas para escrever historia do jogo na tela por este motivo é uma funcao do tipo void.
         
         System.out.println("");
                             System.out.println("Deusa divina: ");
@@ -1576,7 +1583,7 @@ public class magic_math
     }
     
     static void historiaJogo_5(String nome){
-        
+         // funcao criada apenas para escrever historia do jogo na tela por este motivo é uma funcao do tipo void.
         System.out.println("(Chegando ao norte " +nome+ " finalmente chega ao grande castelo das ruínas perdidas,"
                     + " um castelo de um antigo rei louco que deixou um grande segredo em sua torre principal,"
                 + " o héroi precisa-ra chegar até ela porém talvez não seja tão facil assim");
@@ -1683,6 +1690,7 @@ public class magic_math
     }
     
     static void historiaJogo_6(String nome){
+         // funcao criada apenas para escrever historia do jogo na tela por este motivo é uma funcao do tipo void.
         System.out.println("");
         System.out.println("");
                             System.out.println("Deusa divina: ");
@@ -1730,11 +1738,11 @@ public class magic_math
     
     static void historiaJogo_7(){
     Scanner entrar = new Scanner(System.in);
-    int resposta, coracao = 3;
-    int vetor[] = {0, 0, 0};
-    Random aleatorio = new Random();
+    int resposta, coracao = 3;// resposta = receber resposta do usuario  // coracao para administrar a quantidade de chances  do usuario
+    int vetor[] = {0, 0, 0};// vetor criado para realizar a randomizacao dos numeros das portas
+    Random aleatorio = new Random();// criado o random para realizar o sorteio dos numeros
     
-       
+    
     
     
         System.out.println("");
@@ -1793,9 +1801,7 @@ public class magic_math
         int valorAleatorio = aleatorio.nextInt(3);    
         for(int i = 0; i < vetor.length; i++){
         vetor[i] = valorAleatorio;
-        
-            System.out.println("radom: "+valorAleatorio);
-        }   
+        }   // estrutura que popula o vetor com os valores aleatorios
             
         System.out.println("");
         System.out.println("Escolha sabiamente a sua porta, 1ºPorta[0], 2ºPorta[1], 3ºPorta[2]?");
@@ -1803,7 +1809,7 @@ public class magic_math
         
         if(vetor[valorAleatorio] == resposta){
             System.out.println("Parabéns você escolheu a porta certa!");
-            System.out.println("");
+            System.out.println(""); // caso o usario tenha acertado o valor aleatorio
             break;
             
         }else{
@@ -1811,23 +1817,23 @@ public class magic_math
             System.out.println("");
             System.err.println("Você escolheu a porta errado, tente novamente!");
             System.err.println("Coração "+coracao+" / 3");
-            System.out.println("");
+            System.out.println("");// para caso ele tenha errado o valor que o jogo sorteia, questao de sorte...
            
         }
-        }while(coracao != 0);
+        }while(coracao != 0); // estrutura de repeticao para que se repita ate que a vida seja diferente de zero
         
         if(coracao == 0){
         System.out.println("");
         System.err.println("Suas chances acabaram, você morreu!");
         System.out.println("");
-        main(null);}
+        main(null);}//  para dar uma mensagem ao usario para ele saber que suas vidas scabaram e que ele nao conseguiu passar daquele desafio
         
         
 }
     
     static void historiaJogo_8(String nome){
-        
-        System.out.println(" ");
+        // Funcao  criada apenas para escrver historia do jogo, por este motivo é uma funcao do tipo void.
+        System.out.println("Morte: ");
         System.out.println("                                    .\"\"--..__\n" +
 "                     _                     []       ``-.._\n" +
 "                  .'` `'.                  ||__           `-._\n" +
@@ -1865,14 +1871,14 @@ public class magic_math
 "`-.___,-.      .-.        ___,'        (/    \n" +
 "         `---'`   `'----'`");
         
-        System.out.println("Morte: Muito obrigado "+nome+", você me libertou de minha prisão de seculos e graças a você eu poderei ver a Deusa divina novamente ou como eu a conheço,\n"
+        System.out.println("Muito obrigado "+nome+", você me libertou de minha prisão de seculos e graças a você eu poderei ver a Deusa divina novamente ou como eu a conheço,\n"
                 + " Eldia a Deusa da vida, você ira encontrar o seu destino em breve, permita-me ajuda-lo irei te dar um item chamado dados da vida,\n"
                 + " caso você morra você podera rola-los e isso poderá te dar mais uma chance mas você só pode usar uma unica vez, salve o seu povo e cumpra o seu destino.");
         System.out.println("");
     }
     
     static void historiaJogo_9(String nome){
-        
+        //Funcao apenas para printar historia do jogo na tela, por isso ela é do tipo void.
         System.out.println("");
         System.out.println("Após "+nome+" conseguir as cordenadas finais na torre e obter o item 'Dados da vida' ele se dirige para o local final de sua jornada, \n"
                 + "porém ali ele já começava a sentir um grande mal, ele sabia que algo estava por vir e sentia cada vez mais isso chegando perto");
@@ -1881,7 +1887,7 @@ public class magic_math
         System.out.println("");
         System.out.println("..................................");
         System.out.println("");
-        System.out.println("Sauron, o destruidor. Rei da nação de Marven: ");
+        System.out.println("Sauron o destruidor, Rei da nação de Marven: ");
         System.out.println("          _\n" +
 "                              ==(W{==========-      /===-\n" +
 "                                ||  (.--.)         /===-_---~~~~~~~----__\n" +
